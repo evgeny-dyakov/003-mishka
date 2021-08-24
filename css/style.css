@@ -23,7 +23,34 @@
   clip: rect(0 0 0 0);
 }
 
-h1 {
+.page {
+  margin: 0;
+}
+
+.centerer {
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 260px;
+}
+
+.advantages {
   font-family: "OpenSans", "Arial", sans-serif;
-  color: #0000ff;
+  font-weight: 700;
+}
+
+.advantages__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__subtitle {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.advantages__description {
+  margin: 0;
+  font-size: 17px;
+  line-height: 20px;
 }

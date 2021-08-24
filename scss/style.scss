@@ -1,8 +1,6 @@
 @import "_fonts";
 @import "_variables";
 @import "blocks/_visually-hidden";
-
-h1 {
-  font-family: "OpenSans", "Arial", sans-serif;
-  color: #0000ff;
-}
+@import "blocks/_page";
+@import "blocks/_centerer";
+@import "blocks/_advantages";
