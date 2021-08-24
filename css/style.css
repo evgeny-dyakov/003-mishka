@@ -1,0 +1,24 @@
+@font-face {
+  src: url("fonts/name-regular.woff2") format("woff2");
+  font-family: "Name";
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("fonts/name-bold.woff2") format("woff2");
+  font-family: "Name";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
