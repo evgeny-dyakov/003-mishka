@@ -1,6 +1,11 @@
 .advantages {
+  margin: 0 auto;
+  padding-top: 40px;
+  min-width: 320px;
+  max-width: 1050px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 700;
+  background: url("../img/adv-zigzag-line.svg") no-repeat center 0;
 }
 
 .advantages__subtitle {
@@ -81,22 +86,31 @@
   }
 }
 
-@media (min-width: 768px) {
-  .advantages__subtitle {
-    margin-bottom: 45px;
-    font-size: 43px;
-    line-height: 50px;
-  }
-
+@media (min-width: 620px) {
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
   }
 
   .advantages__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .advantages {
+    padding-top: 76px;
+  }
+
+  .advantages__subtitle {
+    margin-bottom: 45px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .advantages__item {
     padding-top: 55px;
     padding-bottom: 60px;
-    width: 50%;
   }
 
   .advantages__description {
@@ -126,5 +140,16 @@
     &--6 {
       width: 240px;
     }
+  }
+}
+
+@media (min-width: 1250px) {
+  .advantages {
+    padding-top: 93px;
+  }
+
+  .advantages__subtitle {
+    font-size: 53px;
+    line-height: 57px;
   }
 }

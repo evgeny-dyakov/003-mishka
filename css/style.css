@@ -28,21 +28,26 @@
 }
 
 .centerer {
-  margin: 0 auto;
   padding: 0 30px;
   min-width: 260px;
 }
 
 @media (min-width: 768px) {
   .centerer {
+    margin: 0 auto;
     padding: 0 50px;
-    min-width: 668px;
+    max-width: 700px;
   }
 }
 
 .advantages {
+  margin: 0 auto;
+  padding-top: 40px;
+  min-width: 320px;
+  max-width: 1050px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 700;
+  background: url("../img/adv-zigzag-line.svg") no-repeat 0 0;
 }
 
 .advantages__subtitle {
@@ -123,12 +128,7 @@
   width: 200px;
 }
 
-@media (min-width: 768px) {
-  .advantages__subtitle {
-    margin-bottom: 45px;
-    font-size: 43px;
-    line-height: 50px;
-  }
+@media (min-width: 620px) {
   .advantages__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -137,9 +137,22 @@
         flex-wrap: wrap;
   }
   .advantages__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .advantages {
+    padding-top: 76px;
+  }
+  .advantages__subtitle {
+    margin-bottom: 45px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .advantages__item {
     padding-top: 55px;
     padding-bottom: 60px;
-    width: 50%;
   }
   .advantages__description {
     font-size: 20px;
@@ -162,5 +175,15 @@
   }
   .advantages__description--6 {
     width: 240px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .advantages {
+    padding-top: 93px;
+  }
+  .advantages__subtitle {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
