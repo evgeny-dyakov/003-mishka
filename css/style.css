@@ -30,13 +30,13 @@
 .centerer {
   margin: 0 auto;
   padding: 0 30px;
-  width: 260px;
+  min-width: 260px;
 }
 
 @media (min-width: 768px) {
   .centerer {
     padding: 0 50px;
-    width: 668px;
+    min-width: 668px;
   }
 }
 
