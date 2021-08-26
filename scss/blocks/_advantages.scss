@@ -3,19 +3,128 @@
   font-weight: 700;
 }
 
+.advantages__subtitle {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 25px;
+  line-height: 30px;
+}
+
 .advantages__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.advantages__subtitle {
-  font-size: 25px;
-  line-height: 30px;
+.advantages__item {
+  padding-top: 50px;
+  padding-bottom: 30px;
+
+  &--1 {
+    background: url("../img/adv-flower.svg") no-repeat 0 0;
+    background-size: 32px 37px;
+  }
+
+  &--2 {
+    background: url("../img/adv-bill.svg") no-repeat 0 0;
+    background-size: 47px 27px;
+  }
+
+  &--3 {
+    background: url("../img/adv-heart.svg") no-repeat 0 0;
+    background-size: 34px 27px;
+  }
+
+  &--4 {
+    background: url("../img/adv-ball.svg") no-repeat 0 0;
+    background-size: 34px 34px;
+  }
+
+  &--5 {
+    background: url("../img/adv-rocket.svg") no-repeat 0 0;
+    background-size: 55px 23px;
+  }
+
+  &--6 {
+    background: url("../img/adv-gift.svg") no-repeat 0 0;
+    background-size: 33px 32px;
+  }
 }
 
 .advantages__description {
   margin: 0;
   font-size: 17px;
   line-height: 20px;
+
+  &--1 {
+    width: 180px;
+  }
+
+  &--2 {
+    width: 200px;
+  }
+
+  &--3 {
+    width: 190px;
+  }
+
+  &--4 {
+    width: 220px;
+  }
+
+  &--5 {
+    width: 260px;
+  }
+
+  &--6 {
+    width: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .advantages__subtitle {
+    margin-bottom: 45px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    padding-top: 55px;
+    padding-bottom: 60px;
+    width: 50%;
+  }
+
+  .advantages__description {
+    font-size: 20px;
+    line-height: 22px;
+
+    &--1 {
+      width: 210px;
+    }
+
+    &--2 {
+      width: 240px;
+    }
+
+    &--3 {
+      width: 220px;
+    }
+
+    &--4 {
+      width: 250px;
+    }
+
+    &--5 {
+      width: 300px;
+    }
+
+    &--6 {
+      width: 240px;
+    }
+  }
 }

@@ -33,9 +33,23 @@
   width: 260px;
 }
 
+@media (min-width: 768px) {
+  .centerer {
+    padding: 0 50px;
+    width: 668px;
+  }
+}
+
 .advantages {
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 700;
+}
+
+.advantages__subtitle {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 25px;
+  line-height: 30px;
 }
 
 .advantages__list {
@@ -44,13 +58,109 @@
   padding: 0;
 }
 
-.advantages__subtitle {
-  font-size: 25px;
-  line-height: 30px;
+.advantages__item {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.advantages__item--1 {
+  background: url("../img/adv-flower.svg") no-repeat 0 0;
+  background-size: 32px 37px;
+}
+
+.advantages__item--2 {
+  background: url("../img/adv-bill.svg") no-repeat 0 0;
+  background-size: 47px 27px;
+}
+
+.advantages__item--3 {
+  background: url("../img/adv-heart.svg") no-repeat 0 0;
+  background-size: 34px 27px;
+}
+
+.advantages__item--4 {
+  background: url("../img/adv-ball.svg") no-repeat 0 0;
+  background-size: 34px 34px;
+}
+
+.advantages__item--5 {
+  background: url("../img/adv-rocket.svg") no-repeat 0 0;
+  background-size: 55px 23px;
+}
+
+.advantages__item--6 {
+  background: url("../img/adv-gift.svg") no-repeat 0 0;
+  background-size: 33px 32px;
 }
 
 .advantages__description {
   margin: 0;
   font-size: 17px;
   line-height: 20px;
+}
+
+.advantages__description--1 {
+  width: 180px;
+}
+
+.advantages__description--2 {
+  width: 200px;
+}
+
+.advantages__description--3 {
+  width: 190px;
+}
+
+.advantages__description--4 {
+  width: 220px;
+}
+
+.advantages__description--5 {
+  width: 260px;
+}
+
+.advantages__description--6 {
+  width: 200px;
+}
+
+@media (min-width: 768px) {
+  .advantages__subtitle {
+    margin-bottom: 45px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .advantages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .advantages__item {
+    padding-top: 55px;
+    padding-bottom: 60px;
+    width: 50%;
+  }
+  .advantages__description {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .advantages__description--1 {
+    width: 210px;
+  }
+  .advantages__description--2 {
+    width: 240px;
+  }
+  .advantages__description--3 {
+    width: 220px;
+  }
+  .advantages__description--4 {
+    width: 250px;
+  }
+  .advantages__description--5 {
+    width: 300px;
+  }
+  .advantages__description--6 {
+    width: 240px;
+  }
 }
