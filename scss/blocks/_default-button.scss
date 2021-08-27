@@ -1,8 +1,8 @@
 .default-button {
   display: block;
-  border: 2px soid $custom-gray;
+  outline: none;
+  border: 2px solid $custom-gray;
   border-radius: 0;
-  width: 260px;
   font-family: $opensans-font;
   font-weight: 700;
   font-size: 18px;
@@ -11,4 +11,14 @@
   text-transform: uppercase;
   color: $custom-gray;
   background: none;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background: $custom-gray;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
 }

@@ -41,6 +41,7 @@
 
 @media (min-width: 768px) {
   .centerer {
+    position: relative;
     margin: 0 auto;
     padding: 0 50px;
     max-width: 800px;
@@ -135,19 +136,6 @@
   width: 200px;
 }
 
-@media (min-width: 620px) {
-  .advantages__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .advantages__item {
-    width: 50%;
-  }
-}
-
 @media (min-width: 768px) {
   .advantages {
     padding-top: 76px;
@@ -157,9 +145,17 @@
     font-size: 43px;
     line-height: 50px;
   }
+  .advantages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .advantages__item {
     padding-top: 55px;
     padding-bottom: 60px;
+    width: 50%;
   }
   .advantages__description {
     font-size: 20px;
@@ -197,12 +193,13 @@
 
 .reviews {
   margin: 0 auto;
+  padding-top: 30px;
   min-width: 320px;
   font-family: "OpenSans", "Arial", sans-serif;
 }
 
 .reviews__title {
-  margin: 0;
+  margin: 0 0 36px;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -210,11 +207,12 @@
 
 .reviews__list {
   list-style-type: none;
-  margin: 0;
+  margin: 0 0 38px;
   padding: 0;
 }
 
 .reviews__text {
+  margin: 0 0 65px;
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
@@ -222,12 +220,14 @@
 }
 
 .reviews__name {
+  margin: 0 0 15px;
   font-weight: 700;
   font-size: 17px;
   line-height: 22px;
 }
 
 .reviews__mail {
+  margin: 0;
   font-weight: 400;
   font-size: 17px;
   line-height: 22px;
@@ -239,7 +239,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
+  margin: 0 auto 38px;
   border: 1px solid #ececec;
   width: 260px;
 }
@@ -255,6 +255,7 @@
 }
 
 .reviews__switch {
+  outline: none;
   border: none;
   border-radius: 0;
   padding: 0;
@@ -283,13 +284,65 @@
 
 .reviews__default-button {
   margin: 0 auto;
+  width: 260px;
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    padding: 80px 0 50px;
+    background: url("../img/rev-bg.jpg") no-repeat 0 0;
+  }
+  .reviews__title {
+    margin: 0 0 65px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .reviews__list {
+    margin: 0;
+  }
+  .reviews__text {
+    margin: 0 0 65px;
+    font-size: 17px;
+  }
+  .reviews__name {
+    margin: 0 0 15px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .reviews__switches {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    margin: 0;
+    border: none;
+    width: 140px;
+  }
+  .reviews__switches::before {
+    content: none;
+  }
+  .reviews__switch {
+    width: 70px;
+  }
+  .reviews__switch--back {
+    background-position: left center;
+  }
+  .reviews__switch--next {
+    margin-left: -1px;
+    background-position: right center;
+  }
+  .reviews__default-button {
+    position: absolute;
+    right: 50px;
+    top: 0;
+    width: 175px;
+  }
 }
 
 .default-button {
   display: block;
-  border: 2px soid #444444;
+  outline: none;
+  border: 2px solid #444444;
   border-radius: 0;
-  width: 260px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -298,4 +351,13 @@
   text-transform: uppercase;
   color: #444444;
   background: none;
+}
+
+.default-button:hover, .default-button:focus {
+  color: #ffffff;
+  background: #444444;
+}
+
+.default-button:active {
+  color: rgba(255, 255, 255, 0.3);
 }

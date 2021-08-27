@@ -4,9 +4,10 @@
   min-width: 320px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet) {
   .centerer {
     // с планшетной версии увеличиваются паддинги, центруется и ограничивается максимальная ширина, т.к. далее в том числе и на десктопе контент нужно держать по центру в определенных узких пределах не более 700px
+    position: relative;
     margin: 0 auto;
     padding: 0 50px;
     max-width: 800px;
