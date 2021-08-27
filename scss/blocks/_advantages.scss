@@ -1,9 +1,9 @@
 .advantages {
-  margin: 0 auto;
+  margin: 0 auto; // центрует блок когда ширина экрана становится более 1050px
   padding-top: 40px;
-  min-width: 320px;
-  max-width: 1050px;
-  font-family: "OpenSans", "Arial", sans-serif;
+  min-width: 320px; // ограничение по мин ширине, чтобы в случае сокращения ширины экрана менее этого значения, контент держался ровно вместе с центровщиком
+  max-width: 1050px; // ограничение по макс ширине, все блоки имеют максимальную ширину контента 1050px
+  font-family: $opensans-font;
   font-weight: 700;
   background: url("../img/adv-zigzag-line.svg") no-repeat center 0;
 }
@@ -97,7 +97,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .advantages {
     padding-top: 76px;
   }
@@ -143,7 +143,7 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: $desktop-width) {
   .advantages {
     padding-top: 93px;
   }

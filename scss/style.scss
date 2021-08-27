@@ -1,6 +1,14 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 @import "_fonts";
 @import "_variables";
 @import "blocks/_visually-hidden";
 @import "blocks/_page";
 @import "blocks/_centerer";
 @import "blocks/_advantages";
+@import "blocks/_reviews";
+@import "blocks/_default-button";

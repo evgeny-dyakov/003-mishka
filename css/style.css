@@ -1,3 +1,10 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 @font-face {
   src: url("../fonts/OpenSans-Regular.woff2") format("woff2");
   font-family: "OpenSans";
@@ -29,14 +36,14 @@
 
 .centerer {
   padding: 0 30px;
-  min-width: 260px;
+  min-width: 320px;
 }
 
 @media (min-width: 768px) {
   .centerer {
     margin: 0 auto;
     padding: 0 50px;
-    max-width: 700px;
+    max-width: 800px;
   }
 }
 
@@ -47,7 +54,7 @@
   max-width: 1050px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 700;
-  background: url("../img/adv-zigzag-line.svg") no-repeat 0 0;
+  background: url("../img/adv-zigzag-line.svg") no-repeat center 0;
 }
 
 .advantages__subtitle {
@@ -186,4 +193,109 @@
     font-size: 53px;
     line-height: 57px;
   }
+}
+
+.reviews {
+  margin: 0 auto;
+  min-width: 320px;
+  font-family: "OpenSans", "Arial", sans-serif;
+}
+
+.reviews__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.reviews__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.reviews__name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.reviews__mail {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  color: #444444;
+}
+
+.reviews__switches {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid #ececec;
+  width: 260px;
+}
+
+.reviews__switches::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 1px;
+  height: 50px;
+  background: #ececec;
+}
+
+.reviews__switch {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  width: 130px;
+  height: 50px;
+}
+
+.reviews__switch:hover, .reviews__switch:focus {
+  opacity: 0.6;
+}
+
+.reviews__switch:active {
+  opacity: 0.3;
+}
+
+.reviews__switch--back {
+  background: url("../img/rev-arrow-back.svg") no-repeat center;
+  background-size: 50px 26px;
+}
+
+.reviews__switch--next {
+  margin-left: -1px;
+  background: url("../img/rev-arrow-next.svg") no-repeat center;
+  background-size: 50px 26px;
+}
+
+.reviews__default-button {
+  margin: 0 auto;
+}
+
+.default-button {
+  display: block;
+  border: 2px soid #444444;
+  border-radius: 0;
+  width: 260px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 52px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #444444;
+  background: none;
 }

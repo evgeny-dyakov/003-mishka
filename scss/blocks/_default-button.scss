@@ -1,0 +1,14 @@
+.default-button {
+  display: block;
+  border: 2px soid $custom-gray;
+  border-radius: 0;
+  width: 260px;
+  font-family: $opensans-font;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 52px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $custom-gray;
+  background: none;
+}

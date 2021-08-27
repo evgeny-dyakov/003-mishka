@@ -1,0 +1,88 @@
+.reviews {
+  margin: 0 auto;
+  min-width: 320px;
+  font-family: $opensans-font;
+}
+
+.reviews__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.reviews__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: $custom-gray;
+}
+
+.reviews__name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.reviews__mail {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  color: $custom-gray;
+}
+
+.reviews__switches {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid $custom-light-gray;
+  width: 260px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 50px;
+    background: $custom-light-gray;
+  }
+}
+
+.reviews__switch {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  width: 130px;
+  height: 50px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--back {
+    background: url("../img/rev-arrow-back.svg") no-repeat center;
+    background-size: 50px 26px;
+  }
+
+  &--next {
+    margin-left: -1px;
+    background: url("../img/rev-arrow-next.svg") no-repeat center;
+    background-size: 50px 26px;
+  }
+}
+
+.reviews__default-button {
+  margin: 0 auto;
+}
