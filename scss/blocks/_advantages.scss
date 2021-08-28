@@ -1,16 +1,14 @@
 .advantages {
-  margin: 0 auto; // центрует блок когда ширина экрана становится более 1050px
-  padding-top: 40px;
-  min-width: 320px; // ограничение по мин ширине, чтобы в случае сокращения ширины экрана менее этого значения, контент держался ровно вместе с центровщиком
-  max-width: 1050px; // ограничение по макс ширине, все блоки имеют максимальную ширину контента 1050px
+  padding-top: 35px; // *
+  min-width: 320px; // *
   font-family: $opensans-font;
   font-weight: 700;
-  background: url("../img/adv-zigzag-line.svg") no-repeat center 0;
+  background: url("../img/zigzag-line.svg") no-repeat center 0;
 }
 
 .advantages__subtitle {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 30px; // *
   font-size: 25px;
   line-height: 30px;
 }
@@ -22,8 +20,8 @@
 }
 
 .advantages__item {
-  padding-top: 50px;
-  padding-bottom: 30px;
+  padding-top: 53px; // *
+  padding-bottom: 30px; // *
 
   &--1 {
     background: url("../img/adv-flower.svg") no-repeat 0 0;

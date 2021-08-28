@@ -49,13 +49,11 @@
 }
 
 .advantages {
-  margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 35px;
   min-width: 320px;
-  max-width: 1050px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 700;
-  background: url("../img/adv-zigzag-line.svg") no-repeat center 0;
+  background: url("../img/zigzag-line.svg") no-repeat center 0;
 }
 
 .advantages__subtitle {
@@ -72,7 +70,7 @@
 }
 
 .advantages__item {
-  padding-top: 50px;
+  padding-top: 53px;
   padding-bottom: 30px;
 }
 
@@ -193,13 +191,14 @@
 
 .reviews {
   margin: 0 auto;
-  padding-top: 30px;
+  padding: 30px 0 50px;
   min-width: 320px;
   font-family: "OpenSans", "Arial", sans-serif;
+  background: url("../img/zigzag-line.svg") no-repeat center bottom;
 }
 
 .reviews__title {
-  margin: 0 0 36px;
+  margin: 0 0 22px;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -207,12 +206,12 @@
 
 .reviews__list {
   list-style-type: none;
-  margin: 0 0 38px;
+  margin: 0 0 36px;
   padding: 0;
 }
 
 .reviews__text {
-  margin: 0 0 65px;
+  margin: 0 0 30px;
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
@@ -220,7 +219,7 @@
 }
 
 .reviews__name {
-  margin: 0 0 15px;
+  margin: 0 0 7px;
   font-weight: 700;
   font-size: 17px;
   line-height: 22px;
@@ -239,7 +238,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto 38px;
+  margin: 0 auto 37px;
   border: 1px solid #ececec;
   width: 260px;
 }
@@ -346,7 +345,7 @@
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 52px;
+  line-height: 48px;
   text-align: center;
   text-transform: uppercase;
   color: #444444;

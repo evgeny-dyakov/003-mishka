@@ -1,12 +1,13 @@
 .reviews {
   margin: 0 auto;
-  padding-top: 30px;
+  padding: 30px 0 50px; // *
   min-width: 320px;
   font-family: $opensans-font;
+  background: url("../img/zigzag-line.svg") no-repeat center bottom;
 }
 
 .reviews__title {
-  margin: 0 0 36px;
+  margin: 0 0 22px; // *
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -14,12 +15,12 @@
 
 .reviews__list {
   list-style-type: none;
-  margin: 0 0 38px;
+  margin: 0 0 36px; // *
   padding: 0;
 }
 
 .reviews__text {
-  margin: 0 0 65px;
+  margin: 0 0 30px; // *
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
@@ -27,7 +28,7 @@
 }
 
 .reviews__name {
-  margin: 0 0 15px;
+  margin: 0 0 7px; // *
   font-weight: 700;
   font-size: 17px;
   line-height: 22px;
@@ -44,7 +45,7 @@
 .reviews__switches {
   position: relative;
   display: flex;
-  margin: 0 auto 38px;
+  margin: 0 auto 37px;
   border: 1px solid $custom-light-gray;
   width: 260px;
 

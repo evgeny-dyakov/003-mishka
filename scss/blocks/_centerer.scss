@@ -1,7 +1,6 @@
 .centerer {
-  // изначально просто задает паддинги и ширину меньше которой центровщик сократиться не может
-  padding: 0 30px;
-  min-width: 320px;
+  padding: 0 30px; // *
+  min-width: 320px; // *
 }
 
 @media (min-width: $tablet) {
