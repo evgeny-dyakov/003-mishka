@@ -1,6 +1,6 @@
 .advantages {
-  padding-top: 35px; // *
-  min-width: 320px; // *
+  padding-top: 35px;
+  min-width: 320px;
   font-family: $opensans-font;
   font-weight: 700;
   background: url("../img/zigzag-line.svg") no-repeat center 0;
@@ -8,7 +8,7 @@
 
 .advantages__subtitle {
   display: block;
-  margin-bottom: 30px; // *
+  margin-bottom: 30px;
   font-size: 25px;
   line-height: 30px;
 }
@@ -20,8 +20,8 @@
 }
 
 .advantages__item {
-  padding-top: 53px; // *
-  padding-bottom: 30px; // *
+  padding-top: 53px;
+  padding-bottom: 30px;
 
   &--1 {
     background: url("../img/adv-flower.svg") no-repeat 0 0;
@@ -86,11 +86,11 @@
 
 @media (min-width: $tablet) {
   .advantages {
-    padding-top: 76px;
+    padding-top: 64px;
   }
 
   .advantages__subtitle {
-    margin-bottom: 45px;
+    margin-bottom: 48px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -101,9 +101,32 @@
   }
 
   .advantages__item {
-    padding-top: 55px;
-    padding-bottom: 60px;
+    padding: 55px 0 58px;
     width: 50%;
+
+    &--1 {
+      order: 1;
+    }
+
+    &--2 {
+      order: 3;
+    }
+
+    &--3 {
+      order: 5;
+    }
+
+    &--4 {
+      order: 2;
+    }
+
+    &--5 {
+      order: 4;
+    }
+
+    &--6 {
+      order: 6;
+    }
   }
 
   .advantages__description {
