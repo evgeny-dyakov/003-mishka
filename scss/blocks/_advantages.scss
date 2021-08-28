@@ -86,7 +86,9 @@
 
 @media (min-width: $tablet) {
   .advantages {
+    margin: 0 auto;
     padding-top: 64px;
+    max-width: 1050px;
   }
 
   .advantages__subtitle {
@@ -161,11 +163,15 @@
 
 @media (min-width: $desktop) {
   .advantages {
-    padding-top: 93px;
+    padding-top: 83px;
   }
 
   .advantages__subtitle {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .advantages__item {
+    padding: 55px 0;
   }
 }

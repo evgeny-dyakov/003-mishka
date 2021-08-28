@@ -97,7 +97,9 @@
 @media (min-width: $tablet) {
   .reviews {
     padding: 100px 0 134px;
-    background: url("../img/rev-bg.jpg") no-repeat 0 25px;
+    background:
+      url("../img/zigzag-line.svg") no-repeat center bottom,
+      url("../img/rev-bg.jpg") no-repeat 0 25px;
   }
 
   .reviews__title {

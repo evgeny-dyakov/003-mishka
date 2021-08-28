@@ -42,7 +42,9 @@
 @media (min-width: 768px) {
   .centerer {
     position: relative;
+    margin: 0 auto;
     padding: 0 50px;
+    max-width: 800px;
   }
 }
 
@@ -134,7 +136,9 @@
 
 @media (min-width: 768px) {
   .advantages {
+    margin: 0 auto;
     padding-top: 64px;
+    max-width: 1050px;
   }
   .advantages__subtitle {
     margin-bottom: 48px;
@@ -208,11 +212,14 @@
 
 @media (min-width: 1250px) {
   .advantages {
-    padding-top: 93px;
+    padding-top: 83px;
   }
   .advantages__subtitle {
     font-size: 53px;
     line-height: 57px;
+  }
+  .advantages__item {
+    padding: 55px 0;
   }
 }
 
@@ -316,7 +323,7 @@
 @media (min-width: 768px) {
   .reviews {
     padding: 100px 0 134px;
-    background: url("../img/rev-bg.jpg") no-repeat 0 25px;
+    background: url("../img/zigzag-line.svg") no-repeat center bottom, url("../img/rev-bg.jpg") no-repeat 0 25px;
   }
   .reviews__title {
     margin: 0 0 50px;
