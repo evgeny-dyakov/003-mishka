@@ -1,0 +1,74 @@
+.week-product {
+  padding: 28px 0 36px;
+  font-family: $opensans-font;
+}
+
+.week-product__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.week-product__title {
+  order: 2;
+  margin: 0;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $custom-turquoise;
+}
+
+.weed-product__name {
+  order: 1;
+  margin: 0 0 4px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.week-product__description {
+  margin: 0 0 15px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: $custom-gray;
+}
+
+.week-product__specifications {
+  margin: 0 auto 26px;
+  border-collapse: collapse;
+  width: 260px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: $custom-gray;
+}
+
+.week-product__column {
+  border-bottom: 1px solid $custom-light-gray;
+  padding: 8px 0;
+
+  &--1 {
+    width: 37%;
+  }
+}
+
+.week-product__image {
+  display: block;
+  margin: 0 auto 24px;
+}
+
+.week-product__price {
+  margin: 0 0 26px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  color: $custom-gray;
+}
+
+.week-product__default-button {
+  margin: 0 auto;
+  width: 260px;
+}
