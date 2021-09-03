@@ -382,7 +382,7 @@
 
 @media (min-width: 1050px) {
   .reviews {
-    padding: 105px 0 185px;
+    padding: 105px 0 188px;
     background: url("../img/zigzag-line.svg") no-repeat center bottom, url("../img/rev-bg.jpg") no-repeat 0 38px;
   }
   .reviews__title {
@@ -393,7 +393,7 @@
     margin: 0 0 40px;
   }
   .reviews__switches {
-    right: 0;
+    right: 18px;
   }
   .reviews__default-button {
     right: 0;
@@ -505,11 +505,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 45px;
-  }
-  .week-product__name {
-    font-size: 43px;
-    line-height: 50px;
+    margin-bottom: 49px;
   }
   .week-product__title {
     margin-right: 25px;
@@ -517,6 +513,11 @@
     font-size: 17px;
     line-height: 17px;
     text-align: center;
+  }
+  .week-product__name {
+    margin: 0;
+    font-size: 43px;
+    line-height: 50px;
   }
   .week-product__description {
     margin: 0 0 36px;
@@ -543,6 +544,32 @@
   .week-product__default-button {
     margin: 0;
     width: 292px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .week-product {
+    padding: 52px 0 72px;
+  }
+  .week-product__title {
+    position: absolute;
+    left: -130px;
+    top: 15px;
+  }
+  .week-product__name {
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .week-product__description {
+    margin: 0 0 50px;
+  }
+  .week-product__specifications {
+    margin: 0 0 108px;
+  }
+  .week-product__image {
+    right: 0;
+    top: -52px;
+    z-index: -1;
   }
 }
 

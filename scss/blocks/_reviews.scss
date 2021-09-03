@@ -160,7 +160,7 @@
 
 @media (min-width: $desktop) {
   .reviews {
-    padding: 105px 0 185px;
+    padding: 105px 0 188px;
     background:
       url("../img/zigzag-line.svg") no-repeat center bottom,
       url("../img/rev-bg.jpg") no-repeat 0 38px;
@@ -176,7 +176,7 @@
   }
 
   .reviews__switches {
-    right: 0;
+    right: 18px;
   }
 
   .reviews__default-button {
