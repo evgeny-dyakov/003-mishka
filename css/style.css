@@ -573,6 +573,11 @@
   }
 }
 
+.contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+}
+
 .default-button {
   display: block;
   outline: none;
