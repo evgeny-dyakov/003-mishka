@@ -1,11 +1,11 @@
 .centerer {
+  position: relative;
   padding: 0 30px;
   min-width: 320px;
 }
 
 @media (min-width: $tablet) {
   .centerer {
-    position: relative;
     margin: 0 auto;
     padding: 0 50px;
     max-width: 800px;
