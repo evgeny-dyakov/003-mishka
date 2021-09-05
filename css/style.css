@@ -389,7 +389,7 @@
 
 @media (min-width: 1050px) {
   .reviews {
-    padding: 105px 0 188px;
+    padding: 110px 0 188px;
     background: url("../img/zigzag-line.svg") no-repeat center bottom, url("../img/rev-bg.jpg") no-repeat 0 38px;
   }
   .reviews__title {
@@ -580,6 +580,9 @@
     top: -52px;
     z-index: -1;
   }
+  .week-product__price {
+    margin: 0 0 32px;
+  }
 }
 
 .contacts {
@@ -598,19 +601,20 @@
   line-height: 30px;
 }
 
+.contacts__wrapper {
+  margin-bottom: 535px;
+}
+
 .contacts__wrapper-category {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
   width: 260px;
 }
 
 .contacts__wrapper-category--mail {
-  margin: 0 auto 30px;
-}
-
-.contacts__wrapper-category--address {
-  margin: 0 auto 535px;
+  margin-bottom: 30px;
 }
 
 .contacts__category,
@@ -696,16 +700,14 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 0 569px;
+    margin-bottom: 569px;
   }
   .contacts__wrapper-category {
+    margin: 0;
     width: auto;
   }
   .contacts__wrapper-category--mail {
-    margin: 0 54px 0 0;
-  }
-  .contacts__wrapper-category--address {
-    margin: 0;
+    margin-right: 54px;
   }
   .contacts__category,
   .contacts__data {
@@ -720,6 +722,38 @@
   }
   .contacts__default-button {
     width: 230px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .contacts {
+    padding: 70px 0 106px;
+    background: url("../img/cont-flag.svg") no-repeat top 132px left 63px;
+    background-size: 47px 81px;
+  }
+  .contacts__centerer {
+    padding-top: 70px;
+    background: none;
+  }
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .contacts__wrapper {
+    display: block;
+    margin-bottom: 80px;
+  }
+  .contacts__wrapper-category--mail {
+    margin-bottom: 30px;
+  }
+  .contacts__map {
+    left: auto;
+    right: 0;
+    top: 0;
+    width: 525px;
+  }
+  .contacts__default-button {
+    margin: 0;
   }
 }
 
