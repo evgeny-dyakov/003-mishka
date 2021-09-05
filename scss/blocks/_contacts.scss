@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 36px 0 38px;
   min-width: 320px;
+  max-width: 1050px;
   font-family: $opensans-font;
 }
 
@@ -94,7 +95,13 @@
 
 @media (min-width: $tablet) {
   .contacts {
-    padding: 62px 0 55px;
+    padding: 47px 0 55px;
+  }
+
+  .contacts__centerer {
+    padding-top: 15px;
+    background: url("../img/cont-flag.svg") no-repeat top 0 right 53px;
+    background-size: 47px 81px;
   }
 
   .contacts__title {

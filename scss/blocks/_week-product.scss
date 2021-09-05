@@ -2,6 +2,7 @@
   margin: 0 auto;
   padding: 28px 0 36px;
   min-width: 320px;
+  max-width: 1050px;
   font-family: $opensans-font;
 }
 
@@ -78,7 +79,6 @@
 @media (min-width: $tablet) {
   .week-product {
     padding: 0 0 52px;
-    max-width: 1050px;
   }
 
   .week-product__wrapper {

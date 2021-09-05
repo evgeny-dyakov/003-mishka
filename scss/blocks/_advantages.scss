@@ -1,6 +1,7 @@
 .advantages {
   padding-top: 35px;
   min-width: 320px;
+  max-width: 1050px;
   font-family: $opensans-font;
   font-weight: 700;
   background: url("../img/zigzag-line.svg") no-repeat center 0;
@@ -88,7 +89,6 @@
   .advantages {
     margin: 0 auto;
     padding-top: 64px;
-    max-width: 1050px; // ?
   }
 
   .advantages__subtitle {

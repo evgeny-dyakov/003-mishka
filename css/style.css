@@ -40,7 +40,7 @@
   min-width: 320px;
 }
 
-.centerer--map-position {
+.centerer--position-reset {
   position: static;
 }
 
@@ -58,7 +58,7 @@
     padding: 0;
     max-width: 9999px;
   }
-  .centerer--map-position {
+  .centerer--position-reset {
     position: relative;
   }
 }
@@ -66,6 +66,7 @@
 .advantages {
   padding-top: 35px;
   min-width: 320px;
+  max-width: 1050px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 700;
   background: url("../img/zigzag-line.svg") no-repeat center 0;
@@ -153,7 +154,6 @@
   .advantages {
     margin: 0 auto;
     padding-top: 64px;
-    max-width: 1050px;
   }
   .advantages__subtitle {
     margin-bottom: 48px;
@@ -242,6 +242,7 @@
   margin: 0 auto;
   padding: 30px 0 50px;
   min-width: 320px;
+  max-width: 1050px;
   font-family: "OpenSans", "Arial", sans-serif;
   background: url("../img/zigzag-line.svg") no-repeat center bottom;
 }
@@ -338,7 +339,6 @@
 @media (min-width: 768px) {
   .reviews {
     padding: 100px 0 134px;
-    max-width: 1050px;
     background: url("../img/zigzag-line.svg") no-repeat center bottom, url("../img/rev-bg.jpg") no-repeat 0 25px;
   }
   .reviews__title {
@@ -413,6 +413,7 @@
   margin: 0 auto;
   padding: 28px 0 36px;
   min-width: 320px;
+  max-width: 1050px;
   font-family: "OpenSans", "Arial", sans-serif;
 }
 
@@ -498,7 +499,6 @@
 @media (min-width: 768px) {
   .week-product {
     padding: 0 0 52px;
-    max-width: 1050px;
   }
   .week-product__wrapper {
     display: -webkit-box;
@@ -587,6 +587,7 @@
   margin: 0 auto;
   padding: 36px 0 38px;
   min-width: 320px;
+  max-width: 1050px;
   font-family: "OpenSans", "Arial", sans-serif;
 }
 
@@ -679,7 +680,12 @@
 
 @media (min-width: 768px) {
   .contacts {
-    padding: 62px 0 55px;
+    padding: 47px 0 55px;
+  }
+  .contacts__centerer {
+    padding-top: 15px;
+    background: url("../img/cont-flag.svg") no-repeat top 0 right 53px;
+    background-size: 47px 81px;
   }
   .contacts__title {
     margin: 0 0 50px;

@@ -4,8 +4,8 @@
   min-width: 320px; // минималка
 }
 
-.centerer--map-position {
-  position: static;
+.centerer--position-reset {
+  position: static; // в контактах нужно позиционироваться относительно блока по ширине всего экрана, а не центровщика
 }
 
 @media (min-width: $tablet) {
@@ -23,7 +23,7 @@
     max-width: 9999px;
   }
 
-  .centerer--map-position {
-    position: relative;
+  .centerer--position-reset {
+    position: relative; // а на десктопе опять перключить позиционирование относительно центровщика
   }
 }
