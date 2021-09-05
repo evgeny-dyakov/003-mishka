@@ -1,14 +1,18 @@
 .centerer {
   position: relative;
-  padding: 0 30px;
-  min-width: 320px;
+  padding: 0 30px; // боковые паддинги
+  min-width: 320px; // минималка
+}
+
+.centerer--map-position {
+  position: static;
 }
 
 @media (min-width: $tablet) {
   .centerer {
-    margin: 0 auto;
+    margin: 0 auto; // нужна центровка, т.к. сам блок уже улетает дальше
     padding: 0 50px;
-    max-width: 800px;
+    max-width: 800px; // 700 - контент + 100 паддинги
   }
 }
 
@@ -17,5 +21,9 @@
     margin: 0 0 0 175px;
     padding: 0;
     max-width: 9999px;
+  }
+
+  .centerer--map-position {
+    position: relative;
   }
 }
