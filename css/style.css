@@ -757,6 +757,14 @@
   }
 }
 
+.footer {
+  font-family: "OpenSans", "Arial", sans-serif;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
 .default-button {
   display: block;
   outline: none;
