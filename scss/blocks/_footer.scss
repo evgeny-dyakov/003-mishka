@@ -1,7 +1,73 @@
 .footer {
+  padding: 26px 0;
+  min-width: 320px;
+  max-width: 1050px;
   font-family: $opensans-font;
+  background: #f1f1f1;
+}
 
-  a {
-    text-decoration: none;
+.footer__centerer::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 55px;
+  width: 80%;
+  height: 1px;
+  max-width: 320px;
+  background: #e5e5e5;
+  transform: translateX(-50%);
+}
+
+.footer__logo-link {
+  display: none;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto 48px;
+  padding: 0 56px;
+  max-width: 350px;
+}
+
+.footer__social-link {
+  display: block;
+  outline: none;
+
+  &:hover .footer__social-logo path,
+  &:focus .footer__social-logo path {
+    fill: $custom-dark-turquoise;
+  }
+
+  &:active .footer__social-logo path {
+    fill: rgba($custom-dark-turquoise, 0.3);
+  }
+}
+
+.footer__developer-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  outline: none;
+  outline-offset: 5px;
+  width: 185px;
+  font-weight: 700;
+  font-size: 19px;
+  text-decoration: none;
+  color: #000000;
+
+  &:hover .footer__academy-logo path,
+  &:focus .footer__academy-logo path {
+    fill: $custom-dark-turquoise;
+  }
+
+  &:active .footer__academy-logo path {
+    fill: rgba($custom-dark-turquoise, 0.3);
+  }
+
+  &:active {
+    color: rgba(#000000, 0.3);
   }
 }
