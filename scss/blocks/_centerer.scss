@@ -14,6 +14,10 @@
     padding: 0 50px;
     max-width: 800px; // 700 - контент + 100 паддинги
   }
+
+  .centerer--free-width {
+    max-width: 9999px; // для футера, хедера не нужно ограничение в 800 px на планшете
+  }
 }
 
 @media (min-width: $desktop) {

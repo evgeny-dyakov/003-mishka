@@ -83,6 +83,7 @@
   .footer__centerer {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     &::before {
       content: none;
@@ -91,7 +92,6 @@
 
   .footer__logo-link {
     display: block;
-    margin-right: 158px;
   }
 
   .footer__logo-image {
@@ -99,9 +99,13 @@
   }
 
   .footer__social {
+    position: absolute;
+    left: 50%;
+    top: 5px;
     margin: 0;
     padding: 0;
     width: 145px;
+    transform: translateX(-50%);
   }
 
   .footer__developer-link {
