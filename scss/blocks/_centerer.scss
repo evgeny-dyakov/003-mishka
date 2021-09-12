@@ -16,7 +16,7 @@
   }
 
   .centerer--free-width {
-    max-width: 9999px; // для футера, хедера не нужно ограничение в 800 px на планшете
+    max-width: 1050px; // для футера, хедера не нужно ограничение в 800 px c планшета
   }
 }
 
@@ -25,6 +25,10 @@
     margin: 0 0 0 175px;
     padding: 0;
     max-width: 9999px;
+  }
+
+  .centerer--free-width {
+    padding: 0; // для футера, хедера не нужны padding с desktop
   }
 
   .centerer--position-reset {

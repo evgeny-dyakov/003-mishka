@@ -51,7 +51,7 @@
     max-width: 800px;
   }
   .centerer--free-width {
-    max-width: 9999px;
+    max-width: 1050px;
   }
 }
 
@@ -60,6 +60,9 @@
     margin: 0 0 0 175px;
     padding: 0;
     max-width: 9999px;
+  }
+  .centerer--free-width {
+    padding: 0;
   }
   .centerer--position-reset {
     position: relative;
@@ -763,7 +766,6 @@
 .footer {
   padding: 26px 0 22px;
   min-width: 320px;
-  max-width: 1050px;
   font-family: "OpenSans", "Arial", sans-serif;
   background: #f1f1f1;
 }
@@ -783,6 +785,16 @@
 
 .footer__logo-link {
   display: none;
+  outline: none;
+}
+
+.footer__logo-link:hover:not(.page--main .footer__logo-link) .footer__logo-image path,
+.footer__logo-link:focus:not(.page--main .footer__logo-link) .footer__logo-image path {
+  fill: #46c1ae;
+}
+
+.footer__logo-link:active:not(.page--main .footer__logo-link) .footer__logo-image path {
+  fill: rgba(70, 193, 174, 0.3);
 }
 
 .footer__social {
@@ -834,7 +846,7 @@
   font-weight: 700;
   font-size: 19px;
   text-decoration: none;
-  color: #000000;
+  color: #231f20;
 }
 
 .footer__developer-link:hover .footer__academy-logo path,
@@ -847,7 +859,7 @@
 }
 
 .footer__developer-link:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(35, 31, 32, 0.3);
 }
 
 @media (min-width: 768px) {
