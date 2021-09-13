@@ -44,23 +44,21 @@
   .centerer {
     margin: 0 auto;
     padding: 0 50px;
-    max-width: 800px;
-  }
-  .centerer--free-width {
     max-width: 1050px;
+  }
+  .centerer--asymmetrical {
+    max-width: 800px;
   }
 }
 
 @media (min-width: 1050px) {
   .centerer {
-    margin: 0 0 0 175px;
-    padding: 0;
-    max-width: 875px;
-  }
-  .centerer--free-width {
-    margin: 0 auto;
     padding: 0;
     max-width: 1050px;
+  }
+  .centerer--asymmetrical {
+    margin: 0 0 0 175px;
+    max-width: 875px;
   }
 }
 
@@ -596,6 +594,7 @@
 }
 
 .footer {
+  outline: 1px solid #000000;
   padding: 26px 0 22px;
   min-width: 320px;
   font-family: "OpenSans", "Arial", sans-serif;
