@@ -5,16 +5,20 @@
   background: #f1f1f1;
 }
 
-.footer__centerer::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 55px;
-  width: 80%;
-  height: 1px;
-  max-width: 320px;
-  background: #e5e5e5;
-  transform: translateX(-50%);
+.footer__centerer {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 55px;
+    width: 80%;
+    height: 1px;
+    max-width: 320px;
+    background: #e5e5e5;
+    transform: translateX(-50%);
+  }
 }
 
 .footer__logo-link {

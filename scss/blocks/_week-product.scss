@@ -6,6 +6,10 @@
   font-family: $opensans-font;
 }
 
+.week-product__centerer {
+  position: relative;
+}
+
 .week-product__wrapper {
   display: flex;
   flex-direction: column;
