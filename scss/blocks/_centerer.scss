@@ -1,29 +1,31 @@
 .centerer {
-  padding: 0 30px; // боковые паддинги
-  min-width: 320px; // минималка
+  padding: 0 30px;
+  min-width: 320px;
   background: rgba(#ff0000, 0.1);
 }
 
 @media (min-width: $tablet) {
   .centerer {
-    margin: 0 auto; // нужна центровка, т.к. сам блок уже улетает дальше
+    margin: 0 auto;
     padding: 0 50px;
-    max-width: 800px; // 700 - контент + 100 паддинги
+    max-width: 800px;
   }
 
   .centerer--free-width {
-    max-width: 1050px; // для футера, хедера не нужно ограничение в 800 px c планшета
+    max-width: 1050px;
   }
 }
 
 @media (min-width: $desktop) {
-  .centerer--asymmetrical {
+  .centerer {
     margin: 0 0 0 175px;
     padding: 0;
-    max-width: 9999px;
+    max-width: 875px;
   }
 
   .centerer--free-width {
-    padding: 0; // для футера, хедера не нужны padding с desktop
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1050px;
   }
 }
