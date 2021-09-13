@@ -1,13 +1,8 @@
 .centerer {
-  // position: relative;
   padding: 0 30px; // боковые паддинги
   min-width: 320px; // минималка
   background: rgba(#ff0000, 0.1);
 }
-
-// .centerer--position-reset {
-//   position: static; // в контактах нужно позиционироваться относительно блока по ширине всего экрана, а не центровщика
-// }
 
 @media (min-width: $tablet) {
   .centerer {
@@ -31,8 +26,4 @@
   .centerer--free-width {
     padding: 0; // для футера, хедера не нужны padding с desktop
   }
-
-  // .centerer--position-reset {
-  //   position: relative; // а на десктопе опять перключить позиционирование относительно центровщика
-  // }
 }
