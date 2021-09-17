@@ -82,19 +82,16 @@
   text-align: center;
 }
 
-.preview__list {
+.preview__links {
   position: absolute;
   left: 0;
   bottom: 0;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   width: 100%;
   height: 211px;
   background: rgba(255, 0, 0, 0.1);
 }
 
-.preview__list-link {
+.preview__link {
   position: absolute;
   left: 0;
   display: block;
@@ -113,21 +110,21 @@
           transition-timing-function: ease-out;
 }
 
-.preview__list-link:hover, .preview__list-link:focus {
+.preview__link:hover, .preview__link:focus {
   height: 108px;
 }
 
-.preview__list-link:active {
+.preview__link:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.preview__list-link--interior {
+.preview__link--interior {
   bottom: 103px;
   z-index: 1;
   background: #63d1bb;
 }
 
-.preview__list-link--interior::after {
+.preview__link--interior::after {
   content: "";
   position: absolute;
   right: 36px;
@@ -142,25 +139,25 @@
           transition-timing-function: ease-out;
 }
 
-.preview__list-link--interior:hover, .preview__list-link--interior:focus {
+.preview__link--interior:hover, .preview__link--interior:focus {
   background: #59d5bc;
 }
 
-.preview__list-link--interior:hover::after, .preview__list-link--interior:focus::after {
+.preview__link--interior:hover::after, .preview__link--interior:focus::after {
   opacity: 0.7;
 }
 
-.preview__list-link--interior:active::after {
+.preview__link--interior:active::after {
   opacity: 0.3;
 }
 
-.preview__list-link--toys {
+.preview__link--toys {
   bottom: 0;
   z-index: 2;
   background: #56c3b2;
 }
 
-.preview__list-link--toys::after {
+.preview__link--toys::after {
   content: "";
   position: absolute;
   right: 27px;
@@ -175,15 +172,15 @@
           transition-timing-function: ease-out;
 }
 
-.preview__list-link--toys:hover, .preview__list-link--toys:focus {
+.preview__link--toys:hover, .preview__link--toys:focus {
   background: #46c1ae;
 }
 
-.preview__list-link--toys:hover::after, .preview__list-link--toys:focus::after {
+.preview__link--toys:hover::after, .preview__link--toys:focus::after {
   opacity: 0.7;
 }
 
-.preview__list-link--toys:active::after {
+.preview__link--toys:active::after {
   opacity: 0.3;
 }
 
