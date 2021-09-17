@@ -1,4 +1,6 @@
 .advantages {
+  margin: 0 auto;
+  outline: 1px solid #000000;
   padding-top: 35px;
   min-width: 320px;
   max-width: 1050px;
@@ -25,40 +27,47 @@
   padding-bottom: 30px;
 
   &--1 {
-    background: url("../img/adv-flower.svg") no-repeat 0 0;
+    background: url("../img/adv-flower.svg") no-repeat;
+    background-position: center 0;
     background-size: 32px 37px;
   }
 
   &--2 {
-    background: url("../img/adv-bill.svg") no-repeat 0 0;
+    background: url("../img/adv-bill.svg") no-repeat;
+    background-position: center 0;
     background-size: 47px 27px;
   }
 
   &--3 {
-    background: url("../img/adv-heart.svg") no-repeat 0 0;
+    background: url("../img/adv-heart.svg") no-repeat;
+    background-position: center 0;
     background-size: 34px 27px;
   }
 
   &--4 {
-    background: url("../img/adv-ball.svg") no-repeat 0 0;
+    background: url("../img/adv-ball.svg") no-repeat;
+    background-position: center 0;
     background-size: 34px 34px;
   }
 
   &--5 {
-    background: url("../img/adv-rocket.svg") no-repeat 0 0;
+    background: url("../img/adv-rocket.svg") no-repeat;
+    background-position: center 0;
     background-size: 55px 23px;
   }
 
   &--6 {
-    background: url("../img/adv-gift.svg") no-repeat 0 0;
+    background: url("../img/adv-gift.svg") no-repeat;
+    background-position: center 0;
     background-size: 33px 32px;
   }
 }
 
 .advantages__description {
-  margin: 0;
+  margin: 0 auto;
   font-size: 17px;
   line-height: 20px;
+  text-align: center;
 
   &--1 {
     width: 180px;
@@ -87,7 +96,6 @@
 
 @media (min-width: $tablet) {
   .advantages {
-    margin: 0 auto;
     padding-top: 64px;
   }
 
@@ -104,7 +112,8 @@
 
   .advantages__item {
     padding: 55px 0 58px;
-    width: 50%;
+    width: 334px;
+    background-position: 0 0;
 
     &--1 {
       order: 1;
@@ -132,8 +141,10 @@
   }
 
   .advantages__description {
+    margin: 0;
     font-size: 20px;
     line-height: 22px;
+    text-align: left;
 
     &--1 {
       width: 210px;
@@ -173,5 +184,6 @@
 
   .advantages__item {
     padding: 55px 0;
+    width: 350px;
   }
 }
