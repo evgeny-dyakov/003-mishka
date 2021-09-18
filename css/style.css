@@ -705,6 +705,7 @@
 
 .reviews__switch:hover, .reviews__switch:focus {
   opacity: 0.6;
+  cursor: pointer;
 }
 
 .reviews__switch:active {
@@ -1134,6 +1135,7 @@
 .default-button:hover, .default-button:focus {
   color: #ffffff;
   background: #444444;
+  cursor: pointer;
 }
 
 .default-button:active {
