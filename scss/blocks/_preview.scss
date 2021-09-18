@@ -1,8 +1,7 @@
 .preview {
   position: relative;
-  outline: 1px solid #000000;
+  margin: 0 auto;
   padding-top: 70px;
-  height: 488px; // *
   min-width: 320px;
   font-family: $opensans-font;
   background: #fafafa url("../img/prev-bg-mobile.jpg") no-repeat center -20px;
@@ -23,8 +22,7 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 211px; // *
-  background: rgba(#ff0000, 0.1);
+  height: 211px;
 }
 
 .preview__link {
@@ -137,7 +135,6 @@
       height: 14px;
       background: url("../img/zigzag-line-white.svg") no-repeat 0 0;
       background-size: cover;
-      background-color: rgba(#ff0000, 0.1);
     }
   }
 
@@ -153,7 +150,6 @@
     display: flex;
     align-items: flex-end;
     height: 124px;
-    background: rgba(#ff0000, 0.1); // *
   }
 
   .preview__link {
@@ -168,16 +164,45 @@
 
     &:hover,
     &:focus {
-      height: 124px; // *
+      height: 124px;
     }
   }
 
-  .preview__link--interior::first-line {
-    top: 32px;
+  .preview__link--interior::after {
+    top: 31px;
   }
 
   .preview__link--toys::after {
     right: 34px;
     top: 33px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .preview {
+    &::before {
+      height: 19px;
+    }
+  }
+
+  .preview__subtitle {
+    margin: 0 auto 354px;
+    width: 660px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .preview__links {
+    height: 126px;
+  }
+
+  .preview__link {
+    padding: 28px 0 0 35px;
+    height: 121px;
+
+    &:hover,
+    &:focus {
+      height: 126px;
+    }
   }
 }

@@ -37,7 +37,6 @@
 .centerer {
   padding: 0 30px;
   min-width: 320px;
-  background: rgba(255, 0, 0, 0.1);
 }
 
 @media (min-width: 768px) {
@@ -64,9 +63,8 @@
 
 .preview {
   position: relative;
-  outline: 1px solid #000000;
+  margin: 0 auto;
   padding-top: 70px;
-  height: 488px;
   min-width: 320px;
   font-family: "OpenSans", "Arial", sans-serif;
   background: #fafafa url("../img/prev-bg-mobile.jpg") no-repeat center -20px;
@@ -88,7 +86,6 @@
   bottom: 0;
   width: 100%;
   height: 211px;
-  background: rgba(255, 0, 0, 0.1);
 }
 
 .preview__link {
@@ -200,7 +197,6 @@
     height: 14px;
     background: url("../img/zigzag-line-white.svg") no-repeat 0 0;
     background-size: cover;
-    background-color: rgba(255, 0, 0, 0.1);
   }
   .preview__subtitle {
     margin: 0 auto 367px;
@@ -217,7 +213,6 @@
         -ms-flex-align: end;
             align-items: flex-end;
     height: 124px;
-    background: rgba(255, 0, 0, 0.1);
   }
   .preview__link {
     position: relative;
@@ -232,8 +227,8 @@
   .preview__link:hover, .preview__link:focus {
     height: 124px;
   }
-  .preview__link--interior::first-line {
-    top: 32px;
+  .preview__link--interior::after {
+    top: 31px;
   }
   .preview__link--toys::after {
     right: 34px;
@@ -241,9 +236,30 @@
   }
 }
 
+@media (min-width: 1050px) {
+  .preview::before {
+    height: 19px;
+  }
+  .preview__subtitle {
+    margin: 0 auto 354px;
+    width: 660px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .preview__links {
+    height: 126px;
+  }
+  .preview__link {
+    padding: 28px 0 0 35px;
+    height: 121px;
+  }
+  .preview__link:hover, .preview__link:focus {
+    height: 126px;
+  }
+}
+
 .week-product {
   margin: 0 auto;
-  outline: 1px solid #000000;
   padding: 28px 0 36px;
   min-width: 320px;
   max-width: 1050px;
@@ -395,7 +411,7 @@
 
 @media (min-width: 1050px) {
   .week-product {
-    padding: 52px 0 72px;
+    padding: 122px 0 72px;
   }
   .week-product__title {
     position: absolute;
@@ -424,7 +440,6 @@
 
 .advantages {
   margin: 0 auto;
-  outline: 1px solid #000000;
   padding-top: 35px;
   min-width: 320px;
   max-width: 1050px;
@@ -611,7 +626,6 @@
 
 .reviews {
   margin: 0 auto;
-  outline: 1px solid #000000;
   padding: 30px 0 50px;
   min-width: 320px;
   max-width: 1050px;
@@ -788,7 +802,6 @@
 .contacts {
   position: relative;
   margin: 0 auto;
-  outline: 1px solid #000000;
   padding: 36px 0 38px;
   min-width: 320px;
   max-width: 1050px;
@@ -960,7 +973,6 @@
 }
 
 .footer {
-  outline: 1px solid #000000;
   padding: 26px 0 22px;
   min-width: 320px;
   font-family: "OpenSans", "Arial", sans-serif;
