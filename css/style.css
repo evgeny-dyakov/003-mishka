@@ -65,6 +65,7 @@
   position: relative;
   margin: 0 auto;
   padding-top: 70px;
+  height: 488px;
   min-width: 320px;
   font-family: "OpenSans", "Arial", sans-serif;
   background: #fafafa url("../img/prev-bg-mobile.jpg") no-repeat center -20px;
