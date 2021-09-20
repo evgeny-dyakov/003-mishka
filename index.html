@@ -9,9 +9,39 @@
 </head>
 <body class="page page--main">
 
-  <br>
-  <br>
-  <br>
+  <header class="header">
+
+    <a class="header__logo-link" href="#">
+      <picture>
+        <source media="(min-width: 1050px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="header__logo-image" src="img/logo-mobile.svg" alt="логотип mishka">
+      </picture>
+    </a>
+
+    <nav class="header__navigation">
+
+      <button class="header__menu-open-close-button">
+        <span>Открыть/закрыть меню</span>
+      </button>
+
+      <div class="header__main-menu">
+        <a class="header__main-menu-link" href="#">Каталог товаров</a>
+        <a class="header__main-menu-link" href="#">Вязание на заказ</a>
+      </div>
+
+      <div class="header__user-menu">
+        <button class="header__search">
+          <span class="header__search-text">Поиск по сайту</span>
+        </button>
+        <a class="header__shopping-cart" href="#">
+          <span class="header__shopping-cart-text">Корзина: пока пуста</span>
+        </a>
+      </div>
+
+    </nav>
+
+  </header>
 
   <section class="preview">
 
