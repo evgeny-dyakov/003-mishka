@@ -11,7 +11,7 @@
 
   <header class="header">
 
-    <a class="header__logo-link" href="#">
+    <a class="header__logo-link">
       <picture>
         <source media="(min-width: 1050px)" srcset="img/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -22,7 +22,7 @@
     <nav class="header__navigation">
 
       <button class="header__menu-open-close-button">
-        <span>Открыть/закрыть меню</span>
+        <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
 
       <div class="header__main-menu">
@@ -31,11 +31,17 @@
       </div>
 
       <div class="header__user-menu">
-        <button class="header__search">
-          <span class="header__search-text">Поиск по сайту</span>
+        <button class="header__search-button">
+          <span class="header__search-button-text">
+            <svg class="header__search-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.6 17.6" width="18"><path d="m17.27 15.73-3.42-3.42A7.62 7.62 0 0 0 15.4 7.7a7.74 7.74 0 1 0-3.09 6.15l3.42 3.42a1 1 0 0 0 .77.33 1.1 1.1 0 0 0 1.1-1.1 1 1 0 0 0-.33-.77ZM2.2 7.7a5.5 5.5 0 1 1 5.5 5.5 5.5 5.5 0 0 1-5.5-5.5Z" fill="#d3d2d2"/></svg>
+            Поиск по сайту
+          </span>
         </button>
-        <a class="header__shopping-cart" href="#">
-          <span class="header__shopping-cart-text">Корзина: пока пуста</span>
+        <a class="header__shopping-cart-link" href="#">
+          <span class="header__shopping-cart-link-text">
+            <svg class="header__shopping-cart-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.29 18.85" width="21"><path d="M19.54 7.23h-3.15L13 .41a.75.75 0 0 0-1-.33.76.76 0 0 0-.34 1l3.08 6.14H5.58l3.07-6.13a.75.75 0 0 0-.34-1 .74.74 0 0 0-1 .33L3.9 7.23H.75a.75.75 0 0 0 0 1.5h.16l.85 3a.76.76 0 0 0-.31.59.74.74 0 0 0 .69.74l1.66 5.8h12.7l1.65-5.8a.73.73 0 0 0 .38-1.33l.86-3h.15a.75.75 0 0 0 0-1.5Zm-4.18 10.12H4.93l-1.22-4.29h12.88ZM17 11.56H3.28l-.81-2.83h15.36Z" fill="#d3d2d2"/></svg>
+            Корзина: пока пуста
+          </span>
         </a>
       </div>
 
