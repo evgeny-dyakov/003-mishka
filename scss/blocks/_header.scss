@@ -1,14 +1,15 @@
 .header {
   position: relative;
   border-bottom: 1px solid $custom-light-gray;
-  padding-top: 69px;
+  padding-top: 78px;
   min-width: 320px;
+  background: rgba(#ff0000, 0.1);
 }
 
 .header__logo-link {
   position: absolute;
   left: 50%;
-  top: 15px;
+  top: 22px;
   outline: none;
   transform: translateX(-50%);
 }
