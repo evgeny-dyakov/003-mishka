@@ -1,7 +1,7 @@
 .contacts {
   position: relative;
   margin: 0 auto;
-  padding: 36px 0 38px;
+  padding: 37px 0 39px;
   min-width: 320px;
   max-width: 1050px;
   font-family: $opensans-font;
@@ -15,7 +15,7 @@
 }
 
 .contacts__wrapper {
-  margin-bottom: 535px;
+  margin-bottom: 533px;
 }
 
 .contacts__wrapper-category {
@@ -79,7 +79,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 308px;
+  top: 310px;
   height: 457px;
   min-width: 320px;
 }
@@ -96,7 +96,7 @@
 
 @media (min-width: $tablet) {
   .contacts {
-    padding: 47px 0 55px;
+    padding: 47px 0 57px;
   }
 
   .contacts__centerer {
@@ -106,7 +106,7 @@
   }
 
   .contacts__title {
-    margin: 0 0 50px;
+    margin: 0 0 48px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -146,7 +146,7 @@
 
 @media (min-width: $desktop) {
   .contacts {
-    padding: 70px 0 106px;
+    padding: 72px 0 106px;
     background: url("../img/cont-flag.svg") no-repeat top 132px left 63px;
     background-size: 47px 81px;
   }

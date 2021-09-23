@@ -408,7 +408,7 @@
     bottom: 0;
     z-index: 3;
     width: 100%;
-    height: 14px;
+    height: 12px;
     background: url("../img/zigzag-line-white.svg") no-repeat 0 0;
     background-size: cover;
   }
@@ -432,7 +432,7 @@
     position: relative;
     left: auto;
     bottom: auto;
-    padding: 30px 0 0 35px;
+    padding: 28px 0 0 35px;
     width: 50%;
     height: 119px;
     font-size: 20px;
@@ -565,7 +565,7 @@
 
 @media (min-width: 768px) {
   .week-product {
-    padding: 47px 0 52px;
+    padding: 47px 0 53px;
   }
   .week-product__wrapper {
     display: -webkit-box;
@@ -581,7 +581,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 49px;
+    margin-bottom: 48px;
   }
   .week-product__title {
     margin-right: 25px;
@@ -596,19 +596,19 @@
     line-height: 50px;
   }
   .week-product__description {
-    margin: 0 0 36px;
+    margin: 0 0 34px;
     width: 292px;
     font-size: 17px;
     line-height: 30px;
   }
   .week-product__specifications {
-    margin: 0 0 54px;
+    margin: 0 0 53px;
     width: 292px;
   }
   .week-product__image {
     position: absolute;
     right: 50px;
-    top: 108px;
+    top: 105px;
     margin: 0;
   }
   .week-product__price {
@@ -625,7 +625,7 @@
 
 @media (min-width: 1050px) {
   .week-product {
-    padding: 122px 0 72px;
+    padding: 122px 0 74px;
   }
   .week-product__title {
     position: absolute;
@@ -637,24 +637,24 @@
     line-height: 57px;
   }
   .week-product__description {
-    margin: 0 0 50px;
+    margin: 0 0 47px;
   }
   .week-product__specifications {
-    margin: 0 0 108px;
+    margin: 0 0 107px;
   }
   .week-product__image {
     right: 0;
-    top: -52px;
+    top: -53px;
     z-index: -1;
   }
   .week-product__price {
-    margin: 0 0 32px;
+    margin: 0 0 35px;
   }
 }
 
 .advantages {
   margin: 0 auto;
-  padding-top: 35px;
+  padding-top: 34px;
   min-width: 320px;
   max-width: 1050px;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -676,8 +676,8 @@
 }
 
 .advantages__item {
-  padding-top: 53px;
-  padding-bottom: 30px;
+  padding-top: 54px;
+  padding-bottom: 29px;
 }
 
 .advantages__item--1 {
@@ -749,7 +749,7 @@
 
 @media (min-width: 768px) {
   .advantages {
-    padding-top: 64px;
+    padding-top: 65px;
   }
   .advantages__subtitle {
     margin-bottom: 48px;
@@ -764,7 +764,7 @@
         flex-wrap: wrap;
   }
   .advantages__item {
-    padding: 55px 0 58px;
+    padding: 54px 0 57px;
     width: 334px;
     background-position: 0 0;
   }
@@ -826,21 +826,21 @@
 
 @media (min-width: 1050px) {
   .advantages {
-    padding-top: 83px;
+    padding-top: 81px;
   }
   .advantages__subtitle {
     font-size: 53px;
     line-height: 57px;
   }
   .advantages__item {
-    padding: 55px 0;
+    padding: 55px 0 56px;
     width: 350px;
   }
 }
 
 .reviews {
   margin: 0 auto;
-  padding: 30px 0 50px;
+  padding: 29px 0 50px;
   min-width: 320px;
   max-width: 1050px;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -860,12 +860,12 @@
 
 .reviews__list {
   list-style-type: none;
-  margin: 0 0 36px;
+  margin: 0 0 34px;
   padding: 0;
 }
 
 .reviews__text {
-  margin: 0 0 30px;
+  margin: 0 0 28px;
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
@@ -943,11 +943,11 @@
 
 @media (min-width: 768px) {
   .reviews {
-    padding: 100px 0 134px;
-    background: url("../img/zigzag-line.svg") no-repeat center bottom, url("../img/rev-bg.jpg") no-repeat 0 25px;
+    padding: 104px 0 134px;
+    background: url("../img/zigzag-line.svg") no-repeat center bottom, url("../img/rev-bg.jpg") no-repeat 0 27px;
   }
   .reviews__title {
-    margin: 0 0 50px;
+    margin: 0 0 48px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -955,7 +955,7 @@
     margin: 0;
   }
   .reviews__text {
-    margin: 0 0 60px;
+    margin: 0 0 58px;
     font-size: 17px;
   }
   .reviews__name {
@@ -987,15 +987,15 @@
   .reviews__default-button {
     position: absolute;
     right: 50px;
-    top: 0;
+    top: 2px;
     width: 175px;
   }
 }
 
 @media (min-width: 1050px) {
   .reviews {
-    padding: 110px 0 188px;
-    background: url("../img/zigzag-line.svg") no-repeat center bottom, url("../img/rev-bg.jpg") no-repeat 0 38px;
+    padding: 105px 0 188px;
+    background: url("../img/zigzag-line.svg") no-repeat center bottom, url("../img/rev-bg.jpg") no-repeat 0 34px;
   }
   .reviews__title {
     font-size: 53px;
@@ -1004,6 +1004,9 @@
   .reviews__text {
     margin: 0 0 40px;
     max-width: 775px;
+  }
+  .reviews__name {
+    margin: 0 0 6px;
   }
   .reviews__switches {
     right: 18px;
@@ -1017,7 +1020,7 @@
 .contacts {
   position: relative;
   margin: 0 auto;
-  padding: 36px 0 38px;
+  padding: 37px 0 39px;
   min-width: 320px;
   max-width: 1050px;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -1031,7 +1034,7 @@
 }
 
 .contacts__wrapper {
-  margin-bottom: 535px;
+  margin-bottom: 533px;
 }
 
 .contacts__wrapper-category {
@@ -1096,7 +1099,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 308px;
+  top: 310px;
   height: 457px;
   min-width: 320px;
 }
@@ -1113,7 +1116,7 @@
 
 @media (min-width: 768px) {
   .contacts {
-    padding: 47px 0 55px;
+    padding: 47px 0 57px;
   }
   .contacts__centerer {
     padding-top: 15px;
@@ -1121,7 +1124,7 @@
     background-size: 47px 81px;
   }
   .contacts__title {
-    margin: 0 0 50px;
+    margin: 0 0 48px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -1156,7 +1159,7 @@
 
 @media (min-width: 1050px) {
   .contacts {
-    padding: 70px 0 106px;
+    padding: 72px 0 106px;
     background: url("../img/cont-flag.svg") no-repeat top 132px left 63px;
     background-size: 47px 81px;
   }
@@ -1188,7 +1191,7 @@
 }
 
 .footer {
-  padding: 26px 0 22px;
+  padding: 26px 0 25px;
   min-width: 320px;
   font-family: "OpenSans", "Arial", sans-serif;
   background: #f1f1f1;
@@ -1235,7 +1238,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 auto 48px;
+  margin: 0 auto 47px;
   padding: 0 56px;
   max-width: 350px;
 }

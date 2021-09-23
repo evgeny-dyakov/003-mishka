@@ -1,6 +1,6 @@
 .advantages {
   margin: 0 auto;
-  padding-top: 35px;
+  padding-top: 34px;
   min-width: 320px;
   max-width: 1050px;
   font-family: $opensans-font;
@@ -22,8 +22,8 @@
 }
 
 .advantages__item {
-  padding-top: 53px;
-  padding-bottom: 30px;
+  padding-top: 54px;
+  padding-bottom: 29px;
 
   &--1 {
     background: url("../img/adv-flower.svg") no-repeat;
@@ -95,7 +95,7 @@
 
 @media (min-width: $tablet) {
   .advantages {
-    padding-top: 64px;
+    padding-top: 65px;
   }
 
   .advantages__subtitle {
@@ -110,7 +110,7 @@
   }
 
   .advantages__item {
-    padding: 55px 0 58px;
+    padding: 54px 0 57px;
     width: 334px;
     background-position: 0 0;
 
@@ -173,7 +173,7 @@
 
 @media (min-width: $desktop) {
   .advantages {
-    padding-top: 83px;
+    padding-top: 81px;
   }
 
   .advantages__subtitle {
@@ -182,7 +182,7 @@
   }
 
   .advantages__item {
-    padding: 55px 0;
+    padding: 55px 0 56px;
     width: 350px;
   }
 }
