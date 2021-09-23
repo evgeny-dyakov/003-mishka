@@ -7,6 +7,7 @@
   <title>Mishka</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body class="page page--main">
 
   <header class="header">
@@ -19,9 +20,9 @@
       </picture>
     </a>
 
-    <nav class="header__navigation">
+    <nav class="header__navigation header__navigation--closed">
 
-      <button class="header__menu-open-close-button">
+      <button class="header__menu-toggle">
         <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
 
@@ -251,6 +252,22 @@
     </div>
 
   </footer>
+
+  <script>
+    var headerNav = document.querySelector('.header__navigation');
+    var headerToggle = document.querySelector('.header__menu-toggle');
+
+    headerToggle.addEventListener('click', function() {
+      if (headerNav.classList.contains('header__navigation--closed'))
+        {
+          headerNav.classList.remove('header__navigation--closed');
+          headerNav.classList.add('header__navigation--opened');
+        } else {
+          headerNav.classList.add('header__navigation--closed');
+          headerNav.classList.remove('header__navigation--opened');
+        }
+    });
+  </script>
 
 </body>
 </html>
