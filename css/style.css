@@ -258,6 +258,10 @@
   top: 2px;
 }
 
+.header__additional-links {
+  display: none;
+}
+
 .header__free-shipping {
   display: none;
 }
@@ -285,7 +289,7 @@
   }
   .header {
     border-bottom: 1px solid #ececec;
-    padding-top: 0;
+    padding: 0 50px;
   }
   .header__logo-link {
     left: 50px;
@@ -301,7 +305,7 @@
   }
   .header__main-menu {
     position: absolute;
-    left: 50px;
+    left: 0;
     bottom: -49px;
     z-index: 1;
   }
@@ -329,14 +333,14 @@
   .header__shopping-cart-link {
     border-top: none;
     border-left: 1px solid #ececec;
-    padding: 31px 50px 32px 83px;
+    padding: 31px 0 32px 83px;
   }
   .header__shopping-cart-link-icon {
     left: -52px;
   }
   .header__free-shipping {
     position: absolute;
-    right: 50px;
+    right: 0;
     bottom: -44px;
     z-index: 1;
     display: inline;
@@ -345,6 +349,72 @@
     font-size: 15px;
     line-height: 24px;
     color: #444444;
+  }
+}
+
+@media (min-width: 1050px) {
+  .header {
+    padding: 0;
+  }
+  .header__logo-link {
+    left: 50%;
+    top: 8px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .header__navigation {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1050px;
+  }
+  .header__main-menu {
+    position: static;
+  }
+  .header__main-menu-link {
+    padding: 31px 35px 32px;
+    font-size: 17px;
+    line-height: 24px;
+  }
+  .header__main-menu-link--catalog {
+    margin: 0;
+    border-right: 1px solid #ececec;
+    padding-left: 0;
+  }
+  .header__user-menu {
+    margin: 0;
+  }
+  .header__additional-links {
+    position: absolute;
+    left: 0;
+    bottom: -49px;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5px 0;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+  }
+  .header__additional-link {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #000000;
+  }
+  .header__additional-link:hover, .header__additional-link:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .header__additional-link:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+  .header__additional-link--new {
+    margin-right: 60px;
   }
 }
 
