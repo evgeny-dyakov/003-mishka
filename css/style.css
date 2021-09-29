@@ -66,7 +66,6 @@
   border-bottom: 1px solid #ececec;
   padding-top: 78px;
   min-width: 320px;
-  background: rgba(255, 0, 0, 0.1);
 }
 
 .header__logo-link {
@@ -166,16 +165,15 @@
   text-align: center;
   text-decoration: none;
   color: #000000;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .header__main-menu-link:hover, .header__main-menu-link:focus {
   color: rgba(0, 0, 0, 0.6);
-  background: none;
 }
 
 .header__main-menu-link:active {
   color: rgba(0, 0, 0, 0.3);
-  background: none;
 }
 
 .header__search-button {
