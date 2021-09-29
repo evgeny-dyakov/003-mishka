@@ -3,8 +3,7 @@
   border-bottom: 1px solid $custom-light-gray;
   padding-top: 78px;
   min-width: 320px;
-
-  // background: rgba(#ff0000, 0.1);
+  background: rgba(#ff0000, 0.1);
 }
 
 .header__logo-link {
@@ -126,6 +125,7 @@
   &:hover,
   &:focus {
     color: rgba(#000000, 0.6);
+    background: none;
   }
 
   &:active {
