@@ -173,6 +173,7 @@
 
 .header__main-menu-link:active {
   color: rgba(0, 0, 0, 0.3);
+  background: none;
 }
 
 .header__search-button {
@@ -400,6 +401,7 @@
     color: #000000;
   }
   .header__additional-link {
+    outline: none;
     font-family: "OpenSans", "Arial", sans-serif;
     font-weight: 700;
     font-size: 15px;
