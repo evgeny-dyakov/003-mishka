@@ -260,6 +260,43 @@
 
   </footer>
 
+  <section class="modal">
+
+    <h2 class="modal__title">Добавить в корзину</h2>
+
+    <p class="modal__select-size-text">Выберите размер:</p>
+
+    <form class="modal__form" action="#" method="post">
+
+      <div class="modal__wrapper">
+        <label class="modal__form-item">
+          <input class="modal__form-input visually-hidden" type="radio" name="size" value="s">
+          <span class="modal__form-indicator">s</span>
+        </label>
+
+        <label class="modal__form-item">
+          <input class="modal__form-input visually-hidden" type="radio" name="size" value="m">
+          <span class="modal__form-indicator">m</span>
+        </label>
+
+        <label class="modal__form-item">
+          <input class="modal__form-input visually-hidden" type="radio" name="size" value="l">
+          <span class="modal__form-indicator">l</span>
+        </label>
+      </div>
+
+      <input class="default-button modal__default-button" type="submit" value="Добавить">
+
+    </form>
+
+    <button class="modal__close-button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+
+  </section>
+
+  <div class="modal-overlay"></div>
+
   <script>
     var headerNav = document.querySelector('.header__navigation');
     var headerToggle = document.querySelector('.header__menu-toggle');
