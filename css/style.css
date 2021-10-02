@@ -1675,3 +1675,31 @@
 .modal__close-button:active::before, .modal__close-button:active::after {
   background: rgba(99, 209, 187, 0.3);
 }
+
+@media (min-width: 768px) {
+  .modal {
+    padding: 32px 0 45px;
+    width: 566px;
+  }
+  .modal__title {
+    margin: 0 auto 12px;
+    width: auto;
+    font-size: 30px;
+    line-height: 57px;
+  }
+  .modal__select-size-text {
+    font-size: 17px;
+  }
+  .modal__form {
+    width: 350px;
+  }
+  .modal__form-item {
+    width: 112px;
+  }
+  .modal__form-indicator {
+    width: 112px;
+  }
+  .modal__default-button {
+    width: 350px;
+  }
+}
