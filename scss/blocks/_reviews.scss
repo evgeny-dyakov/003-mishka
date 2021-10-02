@@ -1,6 +1,6 @@
 .reviews {
   margin: 0 auto;
-  padding: 29px 0 50px;
+  padding: 29px 0 52px;
   min-width: 320px;
   max-width: 1050px;
   font-family: $opensans-font;
@@ -12,7 +12,7 @@
 }
 
 .reviews__title {
-  margin: 0 0 22px;
+  margin: 0 0 25px;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -33,7 +33,7 @@
 }
 
 .reviews__name {
-  margin: 0 0 7px;
+  margin: 0 0 10px;
   font-weight: 700;
   font-size: 17px;
   line-height: 22px;
@@ -102,10 +102,10 @@
 
 @media (min-width: $tablet) {
   .reviews {
-    padding: 104px 0 134px;
+    padding: 108px 0 134px;
     background:
       url("../img/zigzag-line.svg") no-repeat center bottom,
-      url("../img/rev-bg.jpg") no-repeat 0 27px;
+      url("../img/rev-bg.jpg") no-repeat 0 29px;
   }
 
   .reviews__title {
@@ -165,10 +165,10 @@
 
 @media (min-width: $desktop) {
   .reviews {
-    padding: 105px 0 188px;
+    padding: 107px 0 190px;
     background:
       url("../img/zigzag-line.svg") no-repeat center bottom,
-      url("../img/rev-bg.jpg") no-repeat 0 34px;
+      url("../img/rev-bg.jpg") no-repeat 0 36px;
   }
 
   .reviews__title {
