@@ -123,12 +123,12 @@
   text-decoration: none;
   color: #000000;
 
-  &:hover,
-  &:focus {
+  &[href]:hover,
+  &[href]:focus {
     color: rgba(#000000, 0.6);
   }
 
-  &:active {
+  &[href]:active {
     color: rgba(#000000, 0.3);
   }
 }

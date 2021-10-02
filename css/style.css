@@ -193,11 +193,11 @@
   color: #000000;
 }
 
-.header__main-menu-link:hover, .header__main-menu-link:focus {
+.header__main-menu-link[href]:hover, .header__main-menu-link[href]:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.header__main-menu-link:active {
+.header__main-menu-link[href]:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
