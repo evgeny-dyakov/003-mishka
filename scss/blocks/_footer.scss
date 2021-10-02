@@ -26,12 +26,12 @@
   outline: none;
 }
 
-.footer__logo-link:hover:not(.page--main .footer__logo-link) .footer__logo-image path,
-.footer__logo-link:focus:not(.page--main .footer__logo-link) .footer__logo-image path {
+.footer__logo-link[href]:hover .footer__logo-image path,
+.footer__logo-link[href]:focus .footer__logo-image path {
   fill: $custom-dark-turquoise;
 }
 
-.footer__logo-link:active:not(.page--main .footer__logo-link) .footer__logo-image path {
+.footer__logo-link[href]:active .footer__logo-image path {
   fill: rgba($custom-dark-turquoise, 0.3);
 }
 
