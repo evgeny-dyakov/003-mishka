@@ -825,7 +825,7 @@
 
 .advantages {
   margin: 0 auto;
-  padding-top: 34px;
+  padding-top: 35px;
   min-width: 320px;
   max-width: 1050px;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -920,7 +920,7 @@
 
 @media (min-width: 768px) {
   .advantages {
-    padding-top: 65px;
+    padding-top: 68px;
   }
   .advantages__subtitle {
     margin-bottom: 48px;
@@ -997,7 +997,7 @@
 
 @media (min-width: 1050px) {
   .advantages {
-    padding-top: 81px;
+    padding-top: 83px;
   }
   .advantages__subtitle {
     font-size: 53px;
