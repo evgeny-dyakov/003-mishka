@@ -19,12 +19,12 @@ var modalClose = document.querySelector ('.modal__close-button');
 
 order.addEventListener ('click', function (evt) {
   evt.preventDefault();
-  modalSize.classList.add ('modal-show');
+  modalSize.classList.add ('modal--show');
   modalOverlay.classList.add ('modal__overlay--show');
 });
 
 modalClose.addEventListener ('click', function (evt) {
   evt.preventDefault();
-  modalSize.classList.remove ('modal-show');
+  modalSize.classList.remove ('modal--show');
   modalOverlay.classList.remove ('modal__overlay--show');
 });

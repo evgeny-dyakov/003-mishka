@@ -1520,7 +1520,7 @@
           transform: translate(-50%, -50%);
 }
 
-.modal-show {
+.modal--show {
   display: block;
 }
 
