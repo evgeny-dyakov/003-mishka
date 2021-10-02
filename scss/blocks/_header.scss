@@ -15,12 +15,12 @@
   transform: translateX(-50%);
 }
 
-.header__logo-link:not(.page--main .header__logo-link):hover,
-.header__logo-link:not(.page--main .header__logo-link):focus {
+.header__logo-link[href]:hover,
+.header__logo-link[href]:focus {
   opacity: 0.6;
 }
 
-.header__logo-link:not(.page--main .header__logo-link):active {
+.header__logo-link[href]:active {
   opacity: 0.3;
 }
 
