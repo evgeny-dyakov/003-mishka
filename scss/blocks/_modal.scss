@@ -17,7 +17,7 @@
   display: block;
 }
 
-.modal-overlay {
+.modal__overlay {
   position: fixed;
   left: 0;
   top: 0;
@@ -28,7 +28,7 @@
   background: rgba(#ffffff, 0.7);
 }
 
-.modal-overlay-show {
+.modal__overlay--show {
   display: block;
 }
 

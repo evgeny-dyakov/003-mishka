@@ -14,17 +14,17 @@ headerToggle.addEventListener ('click', function() {
 
 var order = document.querySelector ('.week-product__default-button');
 var modalSize = document.querySelector ('.modal');
-var modalOverlay = document.querySelector ('.modal-overlay');
+var modalOverlay = document.querySelector ('.modal__overlay');
 var modalClose = document.querySelector ('.modal__close-button');
 
 order.addEventListener ('click', function (evt) {
   evt.preventDefault();
   modalSize.classList.add ('modal-show');
-  modalOverlay.classList.add ('modal-overlay-show');
+  modalOverlay.classList.add ('modal__overlay--show');
 });
 
 modalClose.addEventListener ('click', function (evt) {
   evt.preventDefault();
   modalSize.classList.remove ('modal-show');
-  modalOverlay.classList.remove ('modal-overlay-show');
+  modalOverlay.classList.remove ('modal__overlay--show');
 });
