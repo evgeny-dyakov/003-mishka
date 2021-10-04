@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-.page {
-  margin: 0;
-}
-
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -22,6 +18,7 @@
 @import "_fonts";
 @import "_variables";
 @import "blocks/_default-button";
+@import "blocks/_page";
 @import "blocks/_centerer";
 @import "blocks/_header";
 @import "blocks/_preview";

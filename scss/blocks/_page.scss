@@ -1,0 +1,40 @@
+.page {
+  margin: 0;
+}
+
+.page__title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0;
+  padding-top: 71px;
+  min-width: 320px;
+  min-height: 178px;
+  font-family: $opensans-font;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  background: #f1f1f1;
+}
+
+@media (min-width: $tablet) {
+  .page__title {
+    padding-top: 95px;
+    min-height: 237px;
+    font-size: 43px;
+    line-height: 50px;
+    background: #f1f1f1 url("../img/zigzag-line-white.svg") repeat-x center bottom;
+    background-size: 770px 24px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page__title {
+    min-height: 270px;
+    font-size: 53px;
+    line-height: 57px;
+    background-size: 1150px 34px;
+  }
+}

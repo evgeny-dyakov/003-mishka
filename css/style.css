@@ -5,10 +5,6 @@
           box-sizing: border-box;
 }
 
-.page {
-  margin: 0;
-}
-
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -58,6 +54,53 @@
 
 .default-button:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.page {
+  margin: 0;
+}
+
+.page__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding-top: 71px;
+  min-width: 320px;
+  min-height: 178px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  background: #f1f1f1;
+}
+
+@media (min-width: 768px) {
+  .page__title {
+    padding-top: 95px;
+    min-height: 237px;
+    font-size: 43px;
+    line-height: 50px;
+    background: #f1f1f1 url("../img/zigzag-line-white.svg") repeat-x center bottom;
+    background-size: 770px 24px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .page__title {
+    min-height: 270px;
+    font-size: 53px;
+    line-height: 57px;
+    background-size: 1150px 34px;
+  }
 }
 
 .centerer {
@@ -1505,48 +1548,6 @@
 
 .catalog {
   min-width: 320px;
-  font-family: "OpenSans", "Arial", sans-serif;
-}
-
-.catalog__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0;
-  padding-top: 71px;
-  min-height: 178px;
-  font-weight: 700;
-  font-size: 27px;
-  line-height: 30px;
-  text-align: center;
-  color: #000000;
-  background: #f1f1f1;
-}
-
-@media (min-width: 768px) {
-  .catalog__title {
-    padding-top: 95px;
-    min-height: 237px;
-    font-size: 43px;
-    line-height: 50px;
-    background: #f1f1f1 url("../img/zigzag-line-white.svg") repeat-x center bottom;
-    background-size: 770px 24px;
-  }
-}
-
-@media (min-width: 1050px) {
-  .catalog__title {
-    min-height: 270px;
-    font-size: 53px;
-    line-height: 57px;
-    background-size: 1150px 34px;
-  }
 }
 
 .modal {
