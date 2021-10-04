@@ -1574,6 +1574,7 @@
 }
 
 .product-card__title-link {
+  outline: none;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -1605,7 +1606,35 @@
 }
 
 .product-card__buy-button {
-  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+  border: none;
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  background: rgba(255, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.product-card__buy-button path {
+  stroke: rgba(34, 31, 31, 0.2);
+}
+
+.product-card__buy-button:hover path,
+.product-card__buy-button:focus path {
+  stroke: #63d1bb;
+}
+
+.product-card__buy-button:active path {
+  stroke: rgba(99, 209, 187, 0.3);
 }
 
 .modal {
