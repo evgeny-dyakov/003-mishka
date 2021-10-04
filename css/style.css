@@ -1508,57 +1508,44 @@
   font-family: "OpenSans", "Arial", sans-serif;
 }
 
-.catalog__title-wrapper {
+.catalog__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 178px;
-  background: #ff0000;
-}
-
-.catalog__title {
   margin: 0;
+  padding-top: 71px;
+  min-height: 178px;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
   color: #000000;
+  background: #f1f1f1;
 }
 
 @media (min-width: 768px) {
-  .catalog__title-wrapper {
-    position: relative;
-    min-height: 236px;
-  }
-  .catalog__title-wrapper::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    background: #000000 url("../img/zigzag-line-white.svg") repeat-x center bottom;
-    background-size: 770px 24px;
-  }
   .catalog__title {
+    padding-top: 95px;
+    min-height: 237px;
     font-size: 43px;
     line-height: 50px;
+    background: #f1f1f1 url("../img/zigzag-line-white.svg") repeat-x center bottom;
+    background-size: 770px 24px;
   }
 }
 
 @media (min-width: 1050px) {
-  .catalog__title-wrapper {
-    min-height: 236px;
-  }
   .catalog__title {
+    min-height: 270px;
     font-size: 53px;
     line-height: 57px;
+    background-size: 1150px 34px;
   }
 }
 
