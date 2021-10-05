@@ -1677,6 +1677,29 @@
   stroke: rgba(99, 209, 187, 0.3);
 }
 
+@media (min-width: 768px) {
+  .product-cards {
+    padding: 67px 0 0;
+  }
+  .product-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    width: 668px;
+    height: 334px;
+  }
+  .product-card__img {
+    width: 334px;
+    height: 334px;
+  }
+  .product-card__description {
+    padding: 23px 28px 27px;
+    width: 334px;
+    height: 334px;
+  }
+}
+
 .modal {
   position: fixed;
   left: 50%;
