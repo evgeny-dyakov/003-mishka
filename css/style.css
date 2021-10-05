@@ -1548,7 +1548,7 @@
 }
 
 .product-cards {
-  padding-top: 30px;
+  padding: 30px 0 0;
   min-width: 320px;
   font-family: "OpenSans", "Arial", sans-serif;
 }
@@ -1560,20 +1560,45 @@
 
 .product-card__img {
   display: block;
+  outline: none;
   width: 260px;
   height: 195px;
   background: rgba(255, 0, 0, 0.1);
 }
 
+.product-card__img:hover + .product-card__description,
+.product-card__img:focus + .product-card__description {
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.product-card__img:active + .product-card__description {
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
 .product-card__description {
   position: relative;
+  border: 1px solid #ededed;
+  padding: 23px 28px 27px;
+}
+
+.product-card__description:hover {
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.product-card__description:active {
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .product-card__title {
-  margin: 0;
+  margin: 0 0 7px;
 }
 
 .product-card__title-link {
+  position: relative;
   outline: none;
   font-weight: 700;
   font-size: 17px;
@@ -1591,7 +1616,7 @@
 }
 
 .product-card__specifications {
-  margin: 0;
+  margin: 0 0 40px;
   font-weight: 400;
   font-size: 13px;
   line-height: 30px;
@@ -1599,13 +1624,28 @@
 }
 
 .product-card__price {
+  position: relative;
+  margin: 0;
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
   color: #000000;
 }
 
+.product-card__price::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -22px;
+  width: 100%;
+  height: 1px;
+  background: #ececec;
+}
+
 .product-card__buy-button {
+  position: absolute;
+  right: 14px;
+  bottom: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1618,9 +1658,9 @@
   outline: none;
   border: none;
   padding: 0;
-  width: 35px;
-  height: 35px;
-  background: rgba(255, 0, 0, 0.1);
+  width: 45px;
+  height: 45px;
+  background: none;
   cursor: pointer;
 }
 
