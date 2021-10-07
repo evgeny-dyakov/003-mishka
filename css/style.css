@@ -106,7 +106,6 @@
 .centerer {
   padding: 0 30px;
   min-width: 320px;
-  background: rgba(255, 0, 0, 0.1);
 }
 
 @media (min-width: 768px) {
@@ -1869,6 +1868,39 @@
     top: 0;
     width: 668px;
     height: 455px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .production-process {
+    padding: 0 0 105px;
+  }
+  .production-process-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: auto;
+  }
+  .production-process-description-wrapper {
+    padding: 46px 56px 44px 77px;
+    width: 366px;
+  }
+  .production-process-title {
+    margin: 0 0 32px;
+    padding: 50px 0 0;
+    width: 150px;
+    background: url("../img/proc-camera.svg") no-repeat 0 0;
+    background-size: 32px 22px;
+  }
+  .production-process-description {
+    margin: 0 0 47px;
+  }
+  .production-process-video {
+    width: 682px;
   }
 }
 
