@@ -1746,6 +1746,10 @@
   }
 }
 
+.production-process {
+  min-width: 320px;
+}
+
 .modal {
   position: fixed;
   left: 50%;
