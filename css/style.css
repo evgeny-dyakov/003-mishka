@@ -1752,24 +1752,81 @@
 }
 
 .production-process-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 260px;
+}
+
+.production-process-description-wrapper {
   border: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 30px;
 }
 
 .production-process-title {
-  padding-left: 50px;
+  margin: 0;
+  margin-bottom: 200px;
+  padding-left: 89px;
   width: 130px;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: #000000;
-  background: url("../img/proc-camera.svg") no-repeat 0 0;
+  background: url("../img/proc-camera.svg") no-repeat 33px 10px;
+  background-size: 32px 22px;
 }
 
 .production-process-description {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0 33px;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   color: #444444;
+}
+
+.production-proces-default-button {
+  margin: 0 auto;
+  width: 192px;
+}
+
+.production-process-video {
+  position: absolute;
+  left: 0;
+  top: 95px;
+  width: 260px;
+  height: 150px;
+}
+
+.production-process-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  outline: none;
+  border: none;
+  padding: 0;
+  width: 101px;
+  height: 77px;
+  background: url("../img/proc-play-btn.svg") no-repeat 0 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  cursor: pointer;
+}
+
+.production-process-play:hover, .production-process-play:focus {
+  width: 121px;
+  height: 97px;
+}
+
+.production-process-play:active {
+  width: 101px;
+  height: 77px;
+  opacity: 0.8;
 }
 
 .modal {
