@@ -1747,6 +1747,7 @@
 }
 
 .production-process {
+  padding: 0 0 58px;
   min-width: 320px;
   font-family: "OpenSans", "Arial", sans-serif;
 }
@@ -1759,14 +1760,12 @@
 
 .production-process-description-wrapper {
   border: 1px solid #ececec;
-  padding-top: 24px;
-  padding-bottom: 30px;
+  padding: 24px 0 32px;
 }
 
 .production-process-title {
-  margin: 0;
-  margin-bottom: 200px;
-  padding-left: 89px;
+  margin: 0 0 200px;
+  padding: 0 0 0 89px;
   width: 130px;
   font-weight: 700;
   font-size: 17px;
@@ -1777,8 +1776,7 @@
 }
 
 .production-process-description {
-  margin: 0;
-  margin-bottom: 25px;
+  margin: 0 0 26px;
   padding: 0 33px;
   font-weight: 400;
   font-size: 13px;
@@ -1797,6 +1795,8 @@
   top: 95px;
   width: 260px;
   height: 150px;
+  background: url("../img/proc-bg-desktop.jpg") no-repeat;
+  background-size: cover;
 }
 
 .production-process-play {
@@ -1827,6 +1827,49 @@
   width: 101px;
   height: 77px;
   opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  .production-process {
+    padding: 0 0 64px;
+  }
+  .production-process-wrapper {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 668px;
+  }
+  .production-process-description-wrapper {
+    padding: 36px 40px 44px;
+  }
+  .production-process-title {
+    margin: 0 0 35px;
+    padding: 0 0 0 65px;
+    width: auto;
+    font-size: 20px;
+    background: url("../img/proc-camera.svg") no-repeat 0 0;
+  }
+  .production-process-description {
+    margin: 0 0 34px;
+    padding: 0;
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .production-proces-default-button {
+    margin: 0;
+    width: 100%;
+  }
+  .production-process-video {
+    position: relative;
+    top: 0;
+    width: 668px;
+    height: 455px;
+  }
 }
 
 .modal {
