@@ -60,6 +60,105 @@
 
   <h1 class="page__title">Вязание на заказ</h1>
 
+  <section class="form">
+
+    <div class="centerer">
+
+      <h2 class="visually-hidden">Форма заказа</h2>
+
+      <p class="form__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+
+      <form class="form__knitting-order" name="knitting-order" action="#" method="post">
+
+        <fieldset class="form__fieldset">
+          <legend class="form__legend form__legend--type">Тип</legend>
+          <label class="form__label">
+            <input class="form__choice-input visually-hidden" type="radio" name="product-type" value="accessory" checked>
+            <span class="form__indicator form__indicator--radio"></span>
+            Аксессуар для интерьера
+          </label>
+          <label class="form__label">
+            <input class="form__choice-input visually-hidden" type="radio" name="product-type" value="toy">
+            <span class="form__indicator form__indicator--radio"></span>
+            Детская игрушка
+          </label>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <legend class="form__legend form__legend--color">Цвет</legend>
+          <label class="form__label">
+            <input class="form__choice-input visually-hidden" type="checkbox" name="color" value="white" checked>
+            <span class="form__indicator form__indicator--checkbox"></span>
+            Белый
+          </label>
+          <label class="form__label">
+            <input class="form__choice-input visually-hidden" type="checkbox" name="color" value="gray">
+            <span class="form__indicator form__indicator--checkbox"></span>
+            Серый
+          </label>
+          <label class="form__label">
+            <input class="form__choice-input visually-hidden" type="checkbox" name="color" value="tiffany">
+            <span class="form__indicator form__indicator--checkbox"></span>
+            «Тиффани»
+          </label>
+          <label class="form__label">
+            <input class="form__choice-input visually-hidden" type="checkbox" name="color" value="black">
+            <span class="form__indicator form__indicator--checkbox"></span>
+            Черный
+          </label>
+          <label class="form__label">
+            <input class="form__choice-input visually-hidden" type="checkbox" name="color" value="pink">
+            <span class="form__indicator form__indicator--checkbox"></span>
+            Розовый
+          </label>
+          <label class="form__label">
+            <input class="form__choice-input visually-hidden" type="checkbox" name="color" value="orange">
+            <span class="form__indicator form__indicator--checkbox"></span>
+            Оранжевый
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>ФИО</legend>
+          <p>
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" placeholder="Ведите ваше имя*">
+          </p>
+          <p>
+            <label for="surname">Фамилия</label>
+            <input type="text" id="surname" name="surname" placeholder="Укажите фамилию*">
+          </p>
+          <p>
+            <label for="patronymic">Отчество</label>
+            <input type="text" id="patronymic" name="patronymic" placeholder="Отчество, если желаете">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Тел</legend>
+            <input type="tel" name="tel" placeholder="+7 XXX XX XX*">
+        </fieldset>
+
+        <fieldset>
+          <legend>E-mail</legend>
+            <input type="email" name="email" placeholder="Ваш Email*">
+        </fieldset>
+
+        <fieldset>
+          <legend>Доп</legend>
+            <textarea name="additional-info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </fieldset>
+
+        <p class="form__rule">*Поля обязательны для заполнения</p>
+
+        <button class="default-button" type="submit">Отправить заказ</button>
+
+      </form>
+
+    </div>
+
+  </section>
+
   <footer class="footer">
 
     <div class="centerer footer__centerer">

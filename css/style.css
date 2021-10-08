@@ -1907,7 +1907,141 @@
 }
 
 .form {
+  padding-top: 22px;
   min-width: 320px;
+  font-family: "OpenSans", "Arial", sans-serif;
+}
+
+.form__intro {
+  margin: 0 0 30px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+}
+
+.form__fieldset {
+  position: relative;
+  margin: 0;
+  border: none;
+  border-top: 2px solid #62d1ba;
+  padding: 41px 0 7px;
+}
+
+.form__legend {
+  position: absolute;
+  left: 0;
+  top: -10px;
+  padding: 0 25px 0 0;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #63d1bb;
+  background: #ffffff;
+}
+
+.form__legend--type {
+  padding: 0 25px 0 0;
+}
+
+.form__legend--color {
+  padding: 0 17px 0 0;
+}
+
+.form__label {
+  position: relative;
+  display: block;
+  margin: 0 0 21px;
+  padding: 0 0 0 61px;
+  min-height: 40px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.form__label:hover .form__indicator {
+  border-color: #62d1ba;
+}
+
+.form__label:active .form__indicator {
+  border-color: #c7c7c7;
+}
+
+.form__indicator--radio {
+  position: absolute;
+  left: 0;
+  top: -9px;
+  display: block;
+  border: 2px solid #444444;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.form__indicator--radio::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: none;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: #62d1ba;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.form__indicator--checkbox {
+  position: absolute;
+  left: 0;
+  top: -9px;
+  display: block;
+  border: 2px solid #444444;
+  width: 40px;
+  height: 40px;
+}
+
+.form__indicator--checkbox::before, .form__indicator--checkbox::after {
+  content: "";
+  position: absolute;
+  display: none;
+  border-radius: 1px;
+  background: #000000;
+}
+
+.form__indicator--checkbox::before {
+  left: 7px;
+  bottom: 13px;
+  width: 10px;
+  height: 2px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.form__indicator--checkbox::after {
+  left: 12px;
+  bottom: 16px;
+  width: 20px;
+  height: 2px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.form__choice-input:checked + .form__indicator::before, .form__choice-input:checked + .form__indicator::after {
+  display: block;
+}
+
+.form__choice-input:focus + .form__indicator {
+  border-color: #62d1ba;
+}
+
+.form__choice-input:active + .form__indicator {
+  border-color: #c7c7c7;
 }
 
 .modal {
