@@ -1906,6 +1906,10 @@
   }
 }
 
+.form {
+  min-width: 320px;
+}
+
 .modal {
   position: fixed;
   left: 50%;
