@@ -1,5 +1,5 @@
 .form {
-  padding-top: 22px;
+  padding: 22px 0 55px;
   min-width: 320px;
   font-family: $opensans-font;
 }
@@ -173,6 +173,7 @@
   border: none;
   border-bottom: 2px solid #000000;
   padding: 13px 0 15px;
+  font-family: $opensans-font;
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
@@ -197,12 +198,18 @@
   padding: 18px 0;
 }
 
+.form__tel-email-input-wrapper {
+  position: relative;
+  margin: 0;
+}
+
 .form__tel-email-input {
   outline: none;
   border: none;
   border-bottom: 2px solid #000000;
-  padding: 13px 0 15px;
+  padding: 13px 50px 15px 0;
   width: 100%;
+  font-family: $opensans-font;
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
@@ -220,4 +227,65 @@
   &:focus {
     border-color: #62d1ba;
   }
+}
+
+.form__tel-email-icon {
+  path {
+    fill: rgba(#000000, 0.2);
+  }
+}
+
+.form__tel-email-icon--tel {
+  position: absolute;
+  right: 8px;
+  top: 7px;
+}
+
+.form__tel-email-icon--email {
+  position: absolute;
+  right: 5px;
+  top: 13px;
+}
+
+.form__tel-email-input:hover + .form__tel-email-icon path,
+.form__tel-email-input:focus + .form__tel-email-icon path {
+  fill: #62d1ba;
+}
+
+.form__fieldset--add {
+  margin: 0 0 4px;
+  padding: 35px 0 7px;
+}
+
+.form__textarea {
+  border: 2px solid #444444;
+  padding: 13px;
+  width: 100%;
+  min-height: 142px;
+  font-family: $opensans-font;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  color: #444444;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 18px;
+    color: #444444;
+    opacity: 0.3;
+  }
+}
+
+.form__rule {
+  margin: 0 0 30px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.default-button--submit {
+  margin: 0 auto;
+  width: 260px;
 }
