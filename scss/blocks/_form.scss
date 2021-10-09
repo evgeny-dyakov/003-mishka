@@ -17,6 +17,10 @@
   margin: 0;
   border: none;
   border-top: 2px solid #62d1ba;
+}
+
+.form__fieldset--type,
+.form__fieldset--color {
   padding: 41px 0 7px;
 }
 
@@ -50,17 +54,21 @@
 }
 
 .form__label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.form__label--choice {
   position: relative;
   display: block;
   margin: 0 0 21px;
   padding: 0 0 0 61px;
   min-height: 40px;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 18px;
-  color: #000000;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  cursor: pointer;
+
+  // -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
   &:hover {
     .form__indicator {
@@ -74,6 +82,8 @@
     }
   }
 }
+
+/////////////////////////////////////////
 
 .form__indicator--radio {
   position: absolute;
@@ -159,20 +169,11 @@
   margin: 0 0 22px;
 }
 
-.form__text-label {
-  margin: 0 0 4px;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 18px;
-  color: #000000;
-  cursor: pointer;
-}
-
 .form__text-input {
   outline: none;
   border: none;
   border-bottom: 2px solid #000000;
-  padding: 13px 0 15px;
+  padding: 17px 0 15px;
   font-family: $opensans-font;
   font-weight: 400;
   font-size: 17px;
@@ -193,9 +194,8 @@
   }
 }
 
-.form__fieldset--tel-email {
-  margin: 0 0 20px;
-  padding: 18px 0;
+.form__fieldset--contacts {
+  padding: 18px 0 38px;
 }
 
 .form__tel-email-input-wrapper {
@@ -252,9 +252,8 @@
   fill: #62d1ba;
 }
 
-.form__fieldset--add {
-  margin: 0 0 4px;
-  padding: 35px 0 7px;
+.form__fieldset--additional {
+  padding: 35px 0 11px;
 }
 
 .form__textarea {

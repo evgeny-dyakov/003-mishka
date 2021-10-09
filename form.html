@@ -70,48 +70,48 @@
 
       <form class="form__knitting-order" name="knitting-order" action="#" method="post">
 
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--type">
           <legend class="form__legend">Тип</legend>
-          <label class="form__label">
+          <label class="form__label form__label--choice">
             <input class="form__choice-input visually-hidden" type="radio" name="product-type" value="accessory" checked>
             <span class="form__indicator form__indicator--radio"></span>
             Аксессуар для интерьера
           </label>
-          <label class="form__label">
+          <label class="form__label form__label--choice">
             <input class="form__choice-input visually-hidden" type="radio" name="product-type" value="toy">
             <span class="form__indicator form__indicator--radio"></span>
             Детская игрушка
           </label>
         </fieldset>
 
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--color">
           <legend class="form__legend">Цвет</legend>
-          <label class="form__label">
+          <label class="form__label form__label--choice">
             <input class="form__choice-input visually-hidden" type="checkbox" name="color" value="white" checked>
             <span class="form__indicator form__indicator--checkbox"></span>
             Белый
           </label>
-          <label class="form__label">
+          <label class="form__label form__label--choice">
             <input class="form__choice-input visually-hidden" type="checkbox" name="color" value="gray">
             <span class="form__indicator form__indicator--checkbox"></span>
             Серый
           </label>
-          <label class="form__label">
+          <label class="form__label form__label--choice">
             <input class="form__choice-input visually-hidden" type="checkbox" name="color" value="tiffany">
             <span class="form__indicator form__indicator--checkbox"></span>
             «Тиффани»
           </label>
-          <label class="form__label">
+          <label class="form__label form__label--choice">
             <input class="form__choice-input visually-hidden" type="checkbox" name="color" value="black">
             <span class="form__indicator form__indicator--checkbox"></span>
             Черный
           </label>
-          <label class="form__label">
+          <label class="form__label form__label--choice">
             <input class="form__choice-input visually-hidden" type="checkbox" name="color" value="pink">
             <span class="form__indicator form__indicator--checkbox"></span>
             Розовый
           </label>
-          <label class="form__label">
+          <label class="form__label form__label--choice">
             <input class="form__choice-input visually-hidden" type="checkbox" name="color" value="orange">
             <span class="form__indicator form__indicator--checkbox"></span>
             Оранжевый
@@ -121,20 +121,20 @@
         <fieldset class="form__fieldset form__fieldset--name">
           <legend class="form__legend">ФИО</legend>
           <p class="form__text-input-wrapper">
-            <label class="form__text-label" for="name">Имя:</label>
+            <label class="form__label" for="name">Имя:</label>
             <input class="form__text-input" type="text" id="name" name="name" placeholder="Введите ваше имя*">
           </p>
           <p class="form__text-input-wrapper">
-            <label class="form__text-label" for="surname">Фамилия:</label>
+            <label class="form__label" for="surname">Фамилия:</label>
             <input class="form__text-input" type="text" id="surname" name="surname" placeholder="Укажите фамилию*">
           </p>
           <p class="form__text-input-wrapper">
-            <label class="form__text-label" for="patronymic">Отчество:</label>
+            <label class="form__label" for="patronymic">Отчество:</label>
             <input class="form__text-input" type="text" id="patronymic" name="patronymic" placeholder="Отчество, если желаете">
           </p>
         </fieldset>
 
-        <fieldset class="form__fieldset form__fieldset--tel-email">
+        <fieldset class="form__fieldset form__fieldset--contacts">
           <legend class="form__legend">Тел</legend>
           <p class="form__tel-email-input-wrapper">
             <input class="form__tel-email-input" type="tel" name="tel" placeholder="+7 XXX XX XX*">
@@ -142,7 +142,7 @@
           </p>
         </fieldset>
 
-        <fieldset class="form__fieldset form__fieldset--tel-email">
+        <fieldset class="form__fieldset form__fieldset--contacts">
           <legend class="form__legend form__legend--email">E-mail</legend>
           <p class="form__tel-email-input-wrapper">
             <input class="form__tel-email-input" type="email" name="email" placeholder="Ваш Email*">
@@ -150,7 +150,7 @@
           </p>
         </fieldset>
 
-        <fieldset class="form__fieldset form__fieldset--add">
+        <fieldset class="form__fieldset form__fieldset--additional">
           <legend class="form__legend">Доп</legend>
           <textarea class="form__textarea" name="additional-info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
