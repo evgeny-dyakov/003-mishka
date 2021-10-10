@@ -1964,6 +1964,7 @@
   font-size: 17px;
   line-height: 18px;
   color: #000000;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   cursor: pointer;
 }
 
@@ -1983,23 +1984,28 @@
   border-color: #c7c7c7;
 }
 
-.form__indicator--radio {
+.form__indicator {
   position: absolute;
   left: 0;
   top: -9px;
-  display: block;
   border: 2px solid #444444;
-  border-radius: 50%;
   width: 40px;
   height: 40px;
 }
 
-.form__indicator--radio::before {
+.form__indicator::before, .form__indicator::after {
   content: "";
   position: absolute;
+  display: none;
+}
+
+.form__indicator--radio {
+  border-radius: 50%;
+}
+
+.form__indicator--radio::before {
   left: 50%;
   top: 50%;
-  display: none;
   border-radius: 50%;
   width: 15px;
   height: 15px;
@@ -2008,20 +2014,7 @@
           transform: translate(-50%, -50%);
 }
 
-.form__indicator--checkbox {
-  position: absolute;
-  left: 0;
-  top: -9px;
-  display: block;
-  border: 2px solid #444444;
-  width: 40px;
-  height: 40px;
-}
-
 .form__indicator--checkbox::before, .form__indicator--checkbox::after {
-  content: "";
-  position: absolute;
-  display: none;
   border-radius: 1px;
   background: #000000;
 }
@@ -2044,11 +2037,15 @@
           transform: rotate(-45deg);
 }
 
-.form__choice-input:checked + .form__indicator::before, .form__choice-input:checked + .form__indicator::after {
+.form__input-choice:checked + .form__indicator::before, .form__input-choice:checked + .form__indicator::after {
   display: block;
 }
 
-.form__choice-input:active + .form__indicator {
+.form__input-choice:focus + .form__indicator {
+  border-color: #62d1ba;
+}
+
+.form__input-choice:active + .form__indicator {
   border-color: #c7c7c7;
 }
 
@@ -2056,7 +2053,7 @@
   padding: 38px 0 18px;
 }
 
-.form__text-input-wrapper {
+.form__input-name-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2067,179 +2064,92 @@
   margin: 0 0 22px;
 }
 
-.form__text-input {
+.form__input {
   outline: none;
   border: none;
   border-bottom: 2px solid #000000;
-  padding: 17px 0 15px;
+  width: 100%;
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 17px;
-  line-height: 18px;
+  line-height: 22px;
   color: #444444;
 }
 
-.form__text-input::-webkit-input-placeholder {
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 18px;
+.form__input::-webkit-input-placeholder {
   color: #444444;
   opacity: 0.3;
 }
 
-.form__text-input:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 18px;
+.form__input:-ms-input-placeholder {
   color: #444444;
   opacity: 0.3;
 }
 
-.form__text-input::-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 18px;
+.form__input::-ms-input-placeholder {
   color: #444444;
   opacity: 0.3;
 }
 
-.form__text-input::placeholder {
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 18px;
+.form__input::placeholder {
   color: #444444;
   opacity: 0.3;
 }
 
-.form__text-input:hover, .form__text-input:focus {
+.form__input:hover, .form__input:focus {
   border-color: #62d1ba;
 }
 
-.form__fieldset--contacts {
-  padding: 18px 0 38px;
+.form__input--name {
+  padding: 14px 0;
 }
 
-.form__tel-email-input-wrapper {
+.form__fieldset--contacts {
+  padding: 14px 0 39px;
+}
+
+.form__input-contacts-wrapper {
   position: relative;
   margin: 0;
 }
 
-.form__tel-email-input {
-  outline: none;
-  border: none;
-  border-bottom: 2px solid #000000;
-  padding: 13px 50px 15px 0;
-  width: 100%;
-  font-family: "OpenSans", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 18px;
-  color: #444444;
+.form__input--contacts {
+  padding: 14px 50px 14px 0;
 }
 
-.form__tel-email-input::-webkit-input-placeholder {
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 18px;
-  color: #444444;
-  opacity: 0.3;
+/* ^ autocomplete */
+.form__icon-contacts {
+  position: absolute;
 }
 
-.form__tel-email-input:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 18px;
-  color: #444444;
-  opacity: 0.3;
-}
-
-.form__tel-email-input::-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 18px;
-  color: #444444;
-  opacity: 0.3;
-}
-
-.form__tel-email-input::placeholder {
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 18px;
-  color: #444444;
-  opacity: 0.3;
-}
-
-.form__tel-email-input:hover, .form__tel-email-input:focus {
-  border-color: #62d1ba;
-}
-
-.form__tel-email-icon path {
+.form__icon-contacts path {
   fill: rgba(0, 0, 0, 0.2);
 }
 
-.form__tel-email-icon--tel {
-  position: absolute;
+.form__icon-contacts--tel {
   right: 8px;
-  top: 7px;
+  top: 9px;
 }
 
-.form__tel-email-icon--email {
-  position: absolute;
+.form__icon-contacts--email {
   right: 5px;
-  top: 13px;
+  top: 15px;
 }
 
-.form__tel-email-input:hover + .form__tel-email-icon path,
-.form__tel-email-input:focus + .form__tel-email-icon path {
+.form__input--contacts:hover + .form__icon-contacts path,
+.form__input--contacts:focus + .form__icon-contacts path {
   fill: #62d1ba;
 }
 
 .form__fieldset--additional {
-  padding: 35px 0 11px;
+  padding: 33px 0 11px;
 }
 
-.form__textarea {
+.form__input--additional {
   border: 2px solid #444444;
-  padding: 13px;
-  width: 100%;
+  padding: 14px;
   min-height: 142px;
-  font-family: "OpenSans", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 18px;
-  color: #444444;
-}
-
-.form__textarea::-webkit-input-placeholder {
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 18px;
-  color: #444444;
-  opacity: 0.3;
-}
-
-.form__textarea:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 18px;
-  color: #444444;
-  opacity: 0.3;
-}
-
-.form__textarea::-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 18px;
-  color: #444444;
-  opacity: 0.3;
-}
-
-.form__textarea::placeholder {
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 18px;
-  color: #444444;
-  opacity: 0.3;
+  resize: none;
 }
 
 .form__rule {
@@ -2251,8 +2161,7 @@
 }
 
 .default-button--submit {
-  margin: 0 auto;
-  width: 260px;
+  width: 100%;
 }
 
 .modal {
