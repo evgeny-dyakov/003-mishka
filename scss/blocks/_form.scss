@@ -183,6 +183,16 @@
   }
 }
 
+.form__input:-webkit-autofill,
+.form__input:-webkit-autofill::first-line {
+  box-shadow: inset 0 0 0 50px #ffffff;
+  font-family: $opensans-font;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  -webkit-text-fill-color: #444444;
+}
+
 .form__input--name {
   padding: 14px 0;
 }
