@@ -2152,10 +2152,11 @@
 }
 
 .form__fieldset--additional {
-  padding: 33px 0 11px;
+  padding: 33px 0 16px;
 }
 
 .form__input--additional {
+  display: block;
   border: 2px solid #444444;
   padding: 14px;
   min-height: 142px;
@@ -2176,7 +2177,8 @@
 
 @media (min-width: 768px) {
   .form {
-    padding: 61px 0 55px;
+    position: relative;
+    padding: 61px 0 105px;
   }
   .form__intro {
     margin: 0 0 8px;
@@ -2193,10 +2195,10 @@
     padding: 50px;
   }
   .form__fieldset--tel {
-    padding-bottom: 11px;
+    padding-bottom: 12px;
   }
   .form__fieldset--email {
-    padding-top: 11px;
+    padding-top: 12px;
   }
   .form__fieldset--color, .form__fieldset--contacts {
     background: #f1f1f1;
@@ -2214,7 +2216,6 @@
   .form__fieldset-wrapper {
     margin-left: auto;
     width: 500px;
-    background: rgba(255, 0, 0, 0.1);
   }
   .form__fieldset-wrapper--color {
     display: -webkit-box;
@@ -2230,7 +2231,7 @@
     width: 240px;
   }
   .form__label {
-    padding: 15px 25px 0 0;
+    padding: 17px 25px 0 0;
     font-size: 19px;
     line-height: 19px;
   }
@@ -2302,6 +2303,20 @@
   .form__icon-contacts--email {
     right: 23px;
     top: 17px;
+  }
+  .form__rule {
+    position: absolute;
+    right: 50px;
+    bottom: 65px;
+    margin: 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+  .default-button--submit {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    width: 230px;
   }
 }
 
