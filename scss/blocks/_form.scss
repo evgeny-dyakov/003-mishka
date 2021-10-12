@@ -259,8 +259,7 @@
 
 @media (min-width: $tablet) {
   .form {
-    position: relative;
-    padding: 61px 0 105px; // *
+    padding: 61px 0 105px;
   }
 
   .form__intro {
@@ -307,8 +306,6 @@
     margin-left: auto;
     width: 500px;
 
-    // background: rgba(#ff0000, 0.1);
-
     &--color {
       display: flex;
       flex-wrap: wrap;
@@ -321,7 +318,7 @@
   }
 
   .form__label {
-    padding: 17px 25px 0 0;
+    padding: 16px 25px 0 0;
     font-size: 19px;
     line-height: 19px;
   }
@@ -412,10 +409,14 @@
     top: 17px;
   }
 
+  .form__bottom-wrapper {
+    position: relative;
+  }
+
   .form__rule {
     position: absolute;
     right: 50px;
-    bottom: 65px;
+    top: 10px;
     margin: 0;
     font-size: 17px;
     line-height: 30px;
@@ -424,7 +425,107 @@
   .default-button--submit {
     position: absolute;
     left: 50px;
-    bottom: 50px;
+    top: 4px;
     width: 230px;
   }
 }
+
+@media (min-width: $desktop) {
+  .form {
+    padding: 105px 0 100px;
+  }
+
+  .form__intro {
+    margin: 0 auto 8px;
+    padding: 0;
+    width: 700px; // *
+  }
+
+  .form__fieldset {
+    display: block;
+    margin: 0 auto;
+    padding: 50px;
+    max-width: 1050px;
+
+    &--tel {
+      padding-bottom: 12px;
+    }
+
+    &--email {
+      padding-top: 12px;
+    }
+  }
+
+  .page--form {
+    overflow-x: hidden;
+  }
+
+  .form__fieldset--color,
+  .form__fieldset--tel,
+  .form__fieldset--email {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 999999px;
+      height: 100%;
+      background: #f1f1f1;
+    }
+
+    &::before {
+      left: -999999px;
+    }
+
+    &::after {
+      right: -999999px;
+    }
+  }
+
+  .form__legend {
+    left: 60px;
+  }
+
+  .form__fieldset-wrapper {
+    margin: 0 auto;
+    width: 700px;
+
+    &--color {
+      .form__label--choice {
+        width: 202px;
+      }
+    }
+  }
+
+  .form__fieldset-wrapper--color .form__label--choice:nth-last-child(-n+3) {
+    margin: 0;
+  }
+
+  .form__icon-contacts--tel {
+    right: 7px;
+    top: 10px;
+  }
+
+  .form__icon-contacts--email {
+    right: 6px;
+    top: 16px;
+  }
+
+  .form__bottom-wrapper {
+    margin: 0 auto;
+    width: 700px;
+  }
+
+  .form__rule {
+    right: 0;
+    top: 8px;
+  }
+
+  .default-button--submit {
+    left: 0;
+    top: 0;
+  }
+}
+
+// fieldset сделать display: block; и max-width: 1050 (1250); margin: 0 auto;
+// внутренний wrapper width: 700; margin: 0;
