@@ -23,7 +23,7 @@
   font-size: 17px;
   line-height: 20px;
   text-transform: uppercase;
-  color: $custom-turquoise;
+  color: #63d1bb;
 }
 
 .week-product__name {
@@ -39,7 +39,7 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: $custom-gray;
+  color: #444444;
 }
 
 .week-product__specifications {
@@ -49,11 +49,11 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: $custom-gray;
+  color: #444444;
 }
 
 .week-product__column {
-  border-bottom: 1px solid $custom-light-gray;
+  border-bottom: 1px solid #ececec;
   padding: 8px 0;
 
   &--1 {
@@ -72,7 +72,7 @@
   font-size: 17px;
   line-height: 24px;
   text-align: center;
-  color: $custom-gray;
+  color: #444444;
 }
 
 .week-product__default-button {

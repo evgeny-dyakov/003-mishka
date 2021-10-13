@@ -28,11 +28,11 @@
 
 .footer__logo-link[href]:hover .footer__logo-image path,
 .footer__logo-link[href]:focus .footer__logo-image path {
-  fill: $custom-dark-turquoise;
+  fill: #46c1ae;
 }
 
 .footer__logo-link[href]:active .footer__logo-image path {
-  fill: rgba($custom-dark-turquoise, 0.3);
+  fill: rgba(#46c1ae, 0.3);
 }
 
 .footer__social {
@@ -49,11 +49,11 @@
 
   &:hover .footer__social-logo path,
   &:focus .footer__social-logo path {
-    fill: $custom-dark-turquoise;
+    fill: #46c1ae;
   }
 
   &:active .footer__social-logo path {
-    fill: rgba($custom-dark-turquoise, 0.3);
+    fill: rgba(#46c1ae, 0.3);
   }
 }
 
@@ -76,11 +76,11 @@
 
   &:hover .footer__academy-logo path,
   &:focus .footer__academy-logo path {
-    fill: $custom-dark-turquoise;
+    fill: #46c1ae;
   }
 
   &:active .footer__academy-logo path {
-    fill: rgba($custom-dark-turquoise, 0.3);
+    fill: rgba(#46c1ae, 0.3);
   }
 
   &:active {

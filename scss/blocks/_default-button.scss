@@ -1,7 +1,7 @@
 .default-button {
   display: block;
   outline: none;
-  border: 2px solid $custom-gray;
+  border: 2px solid #444444;
   border-radius: 0;
   padding: 0;
   font-family: $opensans-font;
@@ -10,13 +10,13 @@
   line-height: 48px;
   text-align: center;
   text-transform: uppercase;
-  color: $custom-gray;
+  color: #444444;
   background: none;
 
   &:hover,
   &:focus {
     color: #ffffff;
-    background: $custom-gray;
+    background: #444444;
     cursor: pointer;
   }
 

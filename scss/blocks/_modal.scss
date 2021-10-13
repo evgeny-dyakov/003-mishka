@@ -48,7 +48,7 @@
   font-size: 15px;
   line-height: 30px;
   text-align: center;
-  color: $custom-gray;
+  color: #444444;
 }
 
 .modal__form {
@@ -76,17 +76,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid rgba($custom-gray, 0.1);
+  border: 2px solid rgba(#444444, 0.1);
   width: 82px;
   height: 52px;
   font-weight: 700;
   font-size: 17px;
   text-transform: uppercase;
-  color: $custom-gray;
+  color: #444444;
 }
 
 .modal__form-item:hover .modal__form-indicator {
-  border: 2px solid rgba($custom-gray, 0.3);
+  border: 2px solid rgba(#444444, 0.3);
 }
 
 .modal__form-input:focus + .modal__form-indicator {
@@ -102,15 +102,15 @@
 }
 
 .modal__default-button {
-  border: 2px solid $custom-turquoise;
+  border: 2px solid #63d1bb;
   width: 260px;
   font-size: 17px;
-  color: $custom-turquoise;
+  color: #63d1bb;
 
   &:hover,
   &:focus {
     color: #ffffff;
-    background: $custom-turquoise;
+    background: #63d1bb;
     cursor: pointer;
   }
 
@@ -139,7 +139,7 @@
     top: 17px;
     width: 26px;
     height: 2px;
-    background: $custom-turquoise;
+    background: #63d1bb;
   }
 
   &::before {
@@ -154,14 +154,14 @@
   &:focus {
     &::before,
     &::after {
-      background: rgba($custom-turquoise, 0.6);
+      background: rgba(#63d1bb, 0.6);
     }
   }
 
   &:active {
     &::before,
     &::after {
-      background: rgba($custom-turquoise, 0.3);
+      background: rgba(#63d1bb, 0.3);
     }
   }
 }
